@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.card
+{
+    display:inline-block;
+    background-color:#fff;
+    box-shadow:1px 1px 3px #212121;
+    margin:5px;
+    padding-bottom:10px;
+    border-radius:5px;
+    text-align: center;
+}

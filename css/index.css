@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html
+{
+    margin: 0px;
+}
+
+body
+{
+    margin:0px;
+    font-family: 'Roboto','Noto Sans Japanese',sans-serif;
+    background-color: #efefef;
+}
+
+h1
+{
+    margin: 0;
+}

@@ -1,0 +1,15 @@
+.materialHeader
+{
+    height: 60px;
+    background: #3F51B5;
+    box-shadow:1px 1px 10px #000;
+    line-height:60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.headerTitleLink
+{
+    text-decoration: none;
+}
