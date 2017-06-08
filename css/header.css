@@ -2,7 +2,7 @@
 {
     height: 60px;
     background: #3F51B5;
-    box-shadow:1px 1px 10px #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     line-height:60px;
     text-align: center;
     text-decoration: none;
