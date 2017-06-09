@@ -24,6 +24,21 @@
 	background-color: #03A9F4;
 }
 
+.materialButton.red500
+{
+	background-color: #F44336;
+}
+
+.materialButton.redA700
+{
+	background-color: #D50000;
+}
+
+.materialButton.grey800
+{
+	background-color: #424242;
+}
+
 .homeButton
 {
     text-align: center;

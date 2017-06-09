@@ -17,3 +17,9 @@ h1
 {
     margin: 0;
 }
+
+.centerDiv
+{
+    text-align: center;
+    margin: 30px;
+}
