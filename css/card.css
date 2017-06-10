@@ -3,7 +3,7 @@
 
 .card
 {
-    width: 325px;
+    width: 20rem;
     display:inline-block;
     background-color:#fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
@@ -22,7 +22,22 @@
 
 .card-title
 {
-    font-size: 35px;
-    margin-bottom: 20px;
+    border-bottom: 1px solid #EEEEEE;
+    font-size: 2rem;
+    margin-bottom: 5px;
     text-align: center;
+}
+
+.card-link
+{
+    text-align: center;
+    border-top: 1px solid #EEEEEE;
+    padding: 15px;
+}
+.card-link a
+{
+    text-decoration: none;
+    color: #03A9F4;
+    margin: 0 10px;
+    font-size: 1.3rem;
 }
