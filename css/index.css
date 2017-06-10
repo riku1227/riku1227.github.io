@@ -4,6 +4,7 @@
 html
 {
     margin: 0px;
+    overflow: hidden;
 }
 
 body
@@ -21,5 +22,5 @@ h1
 .centerDiv
 {
     text-align: center;
-    margin: 30px;
+    margin-bottom: 1.5rem;
 }
