@@ -6,7 +6,7 @@
     width: 20rem;
     display:inline-block;
     background-color:#fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
     margin:5px;
     padding-bottom:10px;
     border-radius:5px;
@@ -40,4 +40,22 @@
     color: #03A9F4;
     margin: 0 10px;
     font-size: 1.3rem;
+}
+
+.cardFull
+{
+    width: 95%;
+    display:inline-block;
+    background-color:#fff;
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+    margin:5px;
+    padding-bottom:10px;
+    border-radius:5px;
+    text-align: center;
+}
+
+.cardFull-img
+{
+    max-width: 100%;
+    height: auto;
 }
