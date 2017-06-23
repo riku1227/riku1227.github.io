@@ -11,11 +11,6 @@
         <meta name="twitter:card" content="summarylargeimage" />
         <title>riku1227/配布物/OffHandPlus</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
-        <link rel="stylesheet" type="text/css" href="../../css/header.css">
-        <link rel="stylesheet" type="text/css" href="../../css/button.css">
-        <link rel="stylesheet" type="text/css" href="../../css/edittext.css">
-        <link rel="stylesheet" type="text/css" href="../../css/card.css">
-        <link rel="stylesheet" type="text/css" href="../../css/index.css">
     </head>
     <body>
         <header class="materialHeader">
@@ -92,5 +87,16 @@
         <div class="centerDiv">
             <a class="materialButton" href="https://riku1227.github.io">ホームに戻る</a>
         </div>
+        <script>
+            var cb = function() {
+            var l = document.createElement('link'); l.rel = 'stylesheet';
+            l.href = '../../css/index.css';
+            var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+            };
+            var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+            webkitRequestAnimationFrame || msRequestAnimationFrame;
+            if (raf) raf(cb);
+            else window.addEventListener('load', cb);
+        </script>
     </body>
 </html>
