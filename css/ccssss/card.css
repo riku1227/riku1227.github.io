@@ -46,6 +46,11 @@
     font-size: 1.3rem;
 }
 
+.card-p
+{
+    margin:0;
+}
+
 .cardFull
 {
     width: 95%;
