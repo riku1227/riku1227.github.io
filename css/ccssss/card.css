@@ -47,6 +47,8 @@
 .card-p
 {
     margin:0;
+    padding-left:25px;
+    padding-right:25px;
 }
 
 .cardFull
