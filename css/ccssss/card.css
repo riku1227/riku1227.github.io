@@ -51,6 +51,12 @@
     padding-right:25px;
 }
 
+.card-description
+{
+    padding-left:25px;
+    padding-right:25px;
+}
+
 .cardFull
 {
     width: 95%;
