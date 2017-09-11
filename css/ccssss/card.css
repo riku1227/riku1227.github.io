@@ -1,0 +1,298 @@
+.card
+{
+    display:inline-block;
+    background-color: #ffffff;
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+    margin:5px;
+    text-align: left;
+    animation:show 1s both;
+    padding-bottom:10px;
+}
+
+.card-title
+{
+    font-size: 1.7rem;
+    padding-left: 2rem;
+    text-align: left;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.card-title-distribution
+{
+    font-size: 1.7rem;
+    padding-left: 2rem;
+    text-align: left;
+    text-decoration: none;
+}
+
+.card-title-2
+{
+    font-size: 1.7rem;
+    text-align: left;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.card-subtitle
+{
+    font-size: 1.5rem;
+    margin: 0px;
+    padding-left: 2rem;
+    text-align: left;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.card-p
+{
+    margin:0;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+.card-halfimg
+{
+    max-width: 75%;
+    height: auto;
+    text-align: center;
+}
+
+/*TwitterCard*/
+.card.twitter
+{
+    background-color: #ffffff;
+    transition: all 300ms 0s ease;
+}
+
+.card.twitter:hover
+{
+    background-color: #2196F3;
+}
+
+.card-title.twitter
+{
+    color: #2196F3;
+}
+
+.card-a-twitter
+{
+    color: #2196F3;
+}
+
+.card.twitter:hover .card-title.twitter
+{
+    color: #FFFFFF;
+}
+
+.card.twitter:hover .card-a-twitter
+{
+    color: #FFFFFF;
+}
+
+/*GooglePlusCard*/
+.card.googleplus
+{
+    background-color: #ffffff;
+    transition: all 300ms 0s ease;
+}
+
+.card.googleplus:hover
+{
+    background-color: #D32F2F;
+}
+
+.card-title.googleplus
+{
+    color: #D32F2F;
+}
+
+.card-a-googleplus
+{
+    color: #D32F2F;
+}
+
+.card.googleplus:hover .card-title.googleplus
+{
+    color: #FFFFFF;
+}
+
+.card.googleplus:hover .card-a-googleplus
+{
+    color: #FFFFFF;
+}
+
+/*GitHubCard*/
+.card.github
+{
+    background-color: #ffffff;
+    transition: all 300ms 0s ease;
+}
+
+.card.github:hover
+{
+    background-color: #424242;
+}
+
+.card-title.github
+{
+    color: #424242;
+}
+
+.card-a-github
+{
+    color: #424242;
+}
+
+.card.github:hover .card-title.github
+{
+    color: #FFFFFF;
+}
+
+.card.github:hover .card-a-github
+{
+    color: #FFFFFF;
+}
+
+/*YoutubeCard*/
+.card.youtube
+{
+    background-color: #ffffff;
+    transition: all 300ms 0s ease;
+}
+
+.card.youtube:hover
+{
+    background-color: #D50000;
+}
+
+.card-title.youtube
+{
+    color: #D50000;
+}
+
+.card-a-youtube
+{
+    color: #D50000;
+}
+
+.card.youtube:hover .card-title.youtube
+{
+    color: #FFFFFF;
+}
+
+.card.youtube:hover .card-a-youtube
+{
+    color: #FFFFFF;
+}
+
+/*PazdoraCard*/
+
+.card.pazdora
+{
+    background-color: #ffffff;
+    transition: all 300ms 0s ease;
+}
+
+.card.pazdora:hover
+{
+    background-color: #9C27B0;
+}
+
+.card-title.pazdora
+{
+    color: #9C27B0;
+}
+
+.card-a-pazdora
+{
+    color: #9C27B0;
+}
+
+.card.pazdora:hover .card-title.pazdora
+{
+    color: #FFFFFF;
+}
+
+.card.pazdora:hover .card-a-pazdora
+{
+    color: #FFFFFF;
+}
+
+@media screen and (orientation: landscape)
+{
+    .card
+    {
+        width: 55%;
+    }
+}
+
+@media screen and (orientation: portrait)
+{
+    .card
+    {
+        width: 95%;
+    }
+}
+
+/* CardList */
+.card.list
+{
+    width: 20rem;
+}
+
+.card-img
+{
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.card-list-title
+{
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card-list-description
+{
+    margin:0;
+    margin-bottom: 10px;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+.card-list-div
+{
+    display:block;
+    text-align: center;
+    margin-top: 2.2rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.card-list-link-div
+{
+    text-align: center;
+    border-top: 1px solid #EEEEEE;
+    padding: 15px;
+}
+
+@keyframes show
+{
+    0%
+    {
+        transform:translate(0,3rem);
+        opacity:0;
+    }
+    25%
+    {
+        transform:translate(0,3rem);
+        opacity:0;
+    }
+    50%
+    {
+        transform:translate(0,0rem);
+        opacity:1;
+    }
+}
