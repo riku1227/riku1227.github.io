@@ -6,7 +6,12 @@
     margin:5px;
     text-align: left;
     animation:show 1s both;
-    padding-bottom:10px;
+    padding:10px;
+}
+
+.card.top-img
+{
+    padding:0px;
 }
 
 .card-title
@@ -239,6 +244,7 @@
 .card.list
 {
     width: 20rem;
+    padding: 0px;
 }
 
 .card-img
