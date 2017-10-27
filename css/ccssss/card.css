@@ -63,6 +63,14 @@
     text-align: center;
 }
 
+.card-buttomline
+{
+    margin:0;
+    padding-left:2rem;
+    padding-right:2rem;
+    border-bottom:thin solid #E0E0E0;
+}
+
 /*TwitterCard*/
 .card.twitter
 {
