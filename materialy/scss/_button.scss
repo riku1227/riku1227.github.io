@@ -1,0 +1,35 @@
+@import "variable";
+
+.button {
+  line-height: 5rem;
+  position: relative;
+  display: inline-block;
+  width: 15rem;
+  height: 5rem;
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: 2px;
+  background: $color--primarySub2;
+  color: $color--white;
+  font-size: 3rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 2px 5px $color--boxshadow;
+  transition: .3s;
+  &__ripple {
+    opacity: 0.35;
+    position: absolute;
+    transform: scale(0);
+    border-radius: 50%;
+    background: $color--white;
+    animation: ripple 700ms;
+    pointer-events: none;
+  }
+}
+
+@keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2.0);
+  }
+}

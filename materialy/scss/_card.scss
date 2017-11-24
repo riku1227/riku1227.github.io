@@ -1,0 +1,152 @@
+@import "variable";
+
+.card {
+  display: inline-block;
+  height: auto;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,.2);
+  background-color: #ffffff;
+  text-align: left;
+  &--title {
+    @extend .card;
+    padding-top: 0px;
+  }
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.8rem;
+  }
+  &__subtitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.5rem;
+  }
+  &__text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+  &__image {
+    text-align: center;
+    &--title {
+      text-align: center;
+      & img {
+        max-width: 100%;
+      }
+    }
+    & img {
+      max-width: 50%;
+      box-shadow: 0 1px 6px rgba(0,0,0,.2);
+    }
+  }
+  &__button {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    color: $color--primary;
+    font-size: 1.1rem;
+    text-decoration: none;
+    &__ripple {
+      opacity: 0.35;
+      position: absolute;
+      transform: scale(0);
+      border-radius: 50%;
+      background: $color--grey800;
+      animation: ripple 700ms;
+      pointer-events: none;
+    }
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .card {
+    width: 55%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .card {
+    width: 95%;
+  }
+}
+
+.cardList {
+  @extend .card;
+  padding: 0px;
+  &__image {
+    max-width: 100%;
+  }
+  &__title {
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+  }
+  &__text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.2rem;
+  }
+  &__button {
+    @extend .card__button;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .cardList {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 565px) {
+  .cardList {
+    width: 14.5rem;
+    &__title {
+      font-size: 1.5rem;
+    }
+    &__text {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 666px) {
+  .cardList {
+    width: 18rem;
+    &__title {
+      font-size: 1.8rem;
+    }
+    &__text {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .cardList {
+    width: 20rem;
+    &__title {
+      font-size: 2rem;
+    }
+    &__text {
+      font-size: 1.2rem;
+    }
+  }
+}

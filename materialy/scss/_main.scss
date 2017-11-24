@@ -1,0 +1,29 @@
+@import "variable";
+body {
+  margin: 0;
+  background-color: $color__background;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  word-wrap:break-word;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.accent {
+  color: $color--accent;
+}
