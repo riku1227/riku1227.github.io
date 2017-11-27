@@ -203,7 +203,7 @@ p {
     .card__image--title {
       text-align: center; }
       .card__image--title img {
-        max-width: 100%; }
+        width: 100%; }
     .card__image img {
       max-width: 50%;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2); }
