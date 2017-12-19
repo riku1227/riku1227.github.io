@@ -205,7 +205,7 @@ p {
       .card__image--title img {
         width: 100%; }
     .card__image img {
-      max-width: 50%;
+      max-width: 75%;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2); }
   .card__button, .cardList__button {
     display: inline-block;
