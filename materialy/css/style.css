@@ -253,6 +253,14 @@ p {
   .cardList__button {
     margin-left: 10px;
     margin-right: 10px; }
+    .cardList__button__ripple {
+      opacity: 0.35;
+      position: absolute;
+      transform: scale(0);
+      border-radius: 50%;
+      background: #424242;
+      animation: ripple 700ms;
+      pointer-events: none; }
 
 @media screen and (min-width: 0px) {
   .cardList {

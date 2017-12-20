@@ -106,6 +106,15 @@
     @extend .card__button;
     margin-left: 10px;
     margin-right: 10px;
+    &__ripple {
+      opacity: 0.35;
+      position: absolute;
+      transform: scale(0);
+      border-radius: 50%;
+      background: $color--grey800;
+      animation: ripple 700ms;
+      pointer-events: none;
+    }
   }
 }
 
