@@ -1,0 +1,44 @@
+{
+  "card_list": [
+    {
+      "name": "HiddenOptions",
+      "data": 2017122001,
+      "dataStr": "2017/12/20",
+      "description": "非表示になっている設定を表示させるリソースパック",
+      "link_dl": "http://www.mediafire.com/folder/mvjhn9hm2v2bo/HiddenOptions",
+      "link_details": "hidden_options.html"
+    },
+    {
+      "name": "BackImageGUI",
+      "data": 2017112701,
+      "dataStr": "2017/11/27",
+      "description": "GUIの背景を画像に変更できるようになるリソースパック",
+      "link_dl": "https://www.mediafire.com/folder/1w18dyc9qz8b1/BackImageGUI",
+      "link_details": "backimage_gui.html"
+    },
+    {
+      "name": "OffHandPlus",
+      "data": 2017082301,
+      "dataStr": "2017/08/23",
+      "description": "PE1.1.0で追加されたOffHandの機能を強化するMODです",
+      "link_dl": "https://www.mediafire.com/folder/hoov8tjcb1v5o/OffHandPlus",
+      "link_details": "offhand_plus.html"
+    },
+    {
+      "name": "SFLC",
+      "data": 2017082201,
+      "dataStr": "2017/08/22",
+      "description": "スーパーフラットのレイヤーを変更できるようになるMODです",
+      "link_dl": "https://www.mediafire.com/folder/uvbozwkptxy40/SuperFlatLayerChanger",
+      "link_details": "superflat_layerchanger.html"
+    },
+    {
+      "name": "LittleMaidVillager",
+      "data": 2017081201,
+      "dataStr": "2017/08/12",
+      "description": "村人をLittleMaidのモデルに変更するリソースパックです",
+      "link_dl": "https://www.mediafire.com/folder/nq46u2imj2u2u/LittleMaidVillager",
+      "link_details": "littlemaid_villager.html"
+    }
+  ]
+}
