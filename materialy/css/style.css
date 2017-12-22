@@ -273,8 +273,8 @@ p {
 @media screen and (min-width: 565px) {
   .cardList {
     width: 14.5rem;
-    margin-left: 15px;
-    margin-right: 15px; }
+    margin-left: 5px;
+    margin-right: 5px; }
     .cardList__title {
       font-size: 1.5rem; }
     .cardList__text {
@@ -283,8 +283,8 @@ p {
 @media screen and (min-width: 666px) {
   .cardList {
     width: 18rem;
-    margin-left: 15px;
-    margin-right: 15px; }
+    margin-left: 5px;
+    margin-right: 5px; }
     .cardList__title {
       font-size: 1.8rem; }
     .cardList__text {
@@ -293,8 +293,8 @@ p {
 @media screen and (min-width: 1280px) {
   .cardList {
     width: 20rem;
-    margin-left: 15px;
-    margin-right: 15px; }
+    margin-left: 5px;
+    margin-right: 5px; }
     .cardList__title {
       font-size: 2rem; }
     .cardList__text {

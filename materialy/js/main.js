@@ -11,6 +11,9 @@
     [].forEach.call(document.getElementsByClassName("card__button"),function(element){
         element.addEventListener("click",rippleAnimation);
     });
+    [].forEach.call(document.getElementsByClassName("cardList__button"),function(element){
+        element.addEventListener("click",rippleAnimation);
+    });
 }());
 
 function loadFile(url,callback) {
