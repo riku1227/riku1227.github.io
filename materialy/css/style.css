@@ -236,6 +236,8 @@ p {
     width: 95%; } }
 
 .cardList {
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 0px; }
   .cardList__image {
     max-width: 100%; }
@@ -264,7 +266,9 @@ p {
 
 @media screen and (min-width: 0px) {
   .cardList {
-    width: 85%; } }
+    width: 85%;
+    margin-left: 0px;
+    margin-right: 0px; } }
 
 @media screen and (min-width: 565px) {
   .cardList {
