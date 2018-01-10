@@ -39,8 +39,8 @@ function rippleAnimation(e) {
     spanCover.setAttribute("style", position);
     spanCover.className = `${this.className}__ripple`;
     setTimeout(function() {
-            const list = document.getElementsByClassName(`${this.className}__ripple`);
+            const list = document.getElementsByClassName(`${button.className}__ripple`);
             for(let i =list.length-1;i>=0; i--){
             list[i].parentNode.removeChild(list[i]);
-    }}, 350)
+    }}, 2500);
 }
