@@ -6,6 +6,8 @@
         document.getElementsByClassName('header')[0].innerHTML = html;
     }
 
+    document.getElementById("test").innerHTML = window.navigator.userAgent.toLowerCase();
+
     [].forEach.call(document.getElementsByClassName("button"),function(element){
         element.addEventListener("click",rippleAnimation);
     });
