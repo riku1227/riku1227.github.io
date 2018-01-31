@@ -17,15 +17,38 @@ function generateCard(json) {
     let result = "";
     const jsonObject = JSON.parse(json);
 
-    for(let i = 0;i < jsonObject.card_list.length;i++) {
-        for(let j = jsonObject.card_list.length-1;j > i;j--) {
-            if(jsonObject.card_list[j].data > jsonObject.card_list[j-1].data) {
-                const temp = jsonObject.card_list[j];
-                jsonObject.card_list[j] = jsonObject.card_list[j-1];
-                jsonObject.card_list[j-1] = temp;
+    function quickSort(startID, endID) {
+        let pivot = jsonObject.card_list[Math.floor((startID + endID)/2)].data;
+        let left = startID;
+        let right = endID;
+
+        while(true) {
+            while(jsonObject.card_list[left].data>pivot) {
+                left++;
             }
+            while(pivot>jsonObject.card_list[right].data) {
+                right--;
+            }
+            if(right <= left) {
+                break;
+            }
+            
+            let tmp =jsonObject.card_list[left];
+            jsonObject.card_list[left] =jsonObject.card_list[right];
+            jsonObject.card_list[right] =tmp;
+            left++;
+            right--;
+        }
+
+        if(startID < left-1){
+            quickSort(startID,left-1);
+        }
+        if(right+1 < endID){
+            quickSort(right+1,endID);
         }
     }
+
+    quickSort(0,jsonObject.card_list.length-1);
 
     for (let i = 0;i < jsonObject.card_list.length;i++) {
         const name = jsonObject.card_list[i].name;
