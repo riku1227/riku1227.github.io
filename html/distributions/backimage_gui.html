@@ -23,35 +23,73 @@
       <div class="card__image--title"> <img src="../../image/distributions/backimage_gui/cover_image.jpg"> </div>
       <p class="card__title">BackImageGUI</p>
       <p class="card__text">GUIの背景を画像に変更できるようになるリソースパックです</p>
+      <p class="card__text">replaceモードやoverlayモードなどの画像置き換え時の挙動を変更することができます</p>
     </div>
     <div class="card">
       <p class="card__title">機能</p>
       <p class="card__text">1.GUIの画像を画像に変更できるようになります</p>
+      <p class="card__text">2._global_variables.jsonを編集することで画像置き換え時の挙動を変更できます</p>
+      <p class="card__subtitle">各種モード</p>
+      <p class="card__text">replaceモード: GUIの背景を画像に置き換えます</p>
+      <p class="card__text">overlayモード: 半透明(alpha:0.6)の画像をGUIの上に被せます(インベントリの画像を合成させる必要がありません)</p>
+      <p class="card__text">backgroundモード: GUIの後ろに画像を置きます</p>
+      <p class="card__text">disableモード: 画像を非表示にします</p>
     </div>
     <div class="card">
       <p class="card__title">動作環境</p>
-      <p class="card__text">Minecraft : 1.2.5.52 ~ 1.2.9.1(で確認)</p>
+      <p class="card__text">Minecraft : 1.2.10.2(で確認)</p>
       <p class="card__text">他のバージョンでも使用できる場合や使用できない場合があります</p>
     </div>
     <div class="card">
       <p class="card__title">ダウンロード</p>
-      <p class="card__text">最新バージョン: 1.2.2</p>
-      <a class="card__button" href="https://www.mediafire.com/download/zw9imi6ub7cv6a9">mcpack</a>
-      <a class="card__button" href="https://www.mediafire.com/download/9pdy3a9qeit0a19">zip</a>
+      <p class="card__text">最新バージョン: 1.3.0</p>
+      <p class="card__text">ファイルをダウンロードした時点で<a href="../terms_of_use.html">利用規約</a>に同意したことになります</p>
+      <a class="card__button" href="https://www.mediafire.com/download/eeidmmpri1ae38m">mcpack</a>
+      <a class="card__button" href="https://www.mediafire.com/download/ol264ak0nt322kv">zip</a>
     </div>
-    <div class="card">
+    <div class="card" id="screenshot">
       <p class="card__title">スクリーンショット</p>
       <div class="card__image"><img src="../../image/distributions/backimage_gui/screenshot_1.jpg"></div>
-      <p class="card__text">作業台の背景画像を変更したときの作業台</p>
       <div class="card__image"><img src="../../image/distributions/backimage_gui/screenshot_2.jpg"></div>
-      <p class="card__text">ホッパーの背景画像を変更したときのホッパー</p>
+      <p class="card__text">replaceモード時の作業台(角を丸くしたい場合は画像編集ソフトで角を編集してください)</p>
+      <p class="card__text">ベースにR3DCraft 画像はアズールレーン(Azur Lane)のZ19を使用しています</p>
+      <div class="card__image"><img src="../../image/distributions/backimage_gui/screenshot_3.jpg"></div>
+      <div class="card__image"><img src="../../image/distributions/backimage_gui/screenshot_4.jpg"></div>
+      <p class="card__text">overlayモード時の作業台(画像は適切なアスペクト比に切り抜く必要があります)</p>
+      <p class="card__text">画像はアズールレーン(Azur Lane)のZ19を使用しています</p>
+      <div class="card__image"><img src="../../image/distributions/backimage_gui/screenshot_5.jpg"></div>
+      <div class="card__image"><img src="../../image/distributions/backimage_gui/screenshot_6.jpg"></div>
+      <p class="card__text">backgroundモード時の作業台(画像は使用している端末の画面アスペクト比に合わせる必要があります)</p>
+      <p class="card__text">画像はアズールレーン(Azur Lane)のZ19を使用しています(GUIで隠れてしまうため少し右にずらしています)</p>
+      <div class="card__image"><img src="../../image/distributions/backimage_gui/screenshot_7.jpg"></div>
+      <p class="card__text">disableモード時の作業台</p>
     </div>
     <div class="card">
       <p class="card__title">使い方</p>
-      <p class="card__text">Coming soon...</p>
+      <p class="card__title">Android</p>
+      <p class="card__subtitle">インストール</p>
+      <p class="card__text">まずダウンロードのmcpackを押し、真ん中に出てきた緑色のダウンロードボタンを押して、ファイルをダウンロードしてください</p>
+      <p class="card__text">ダウンロードが終わったら、ファイルマネージャーでダウンロードしたファイルを押し、Minecraftで開いてください</p>
+      <p class="card__text">Minecraftで開きインポート成功と出たら、設定→グローバルリソース 利用可能なリソースパックの中にあるBackImageGUIを押しプラスを押して、使用中のパックに移動したらMinecraftを再起動してください</p>
+      <div class="card__image"><img src="../../image/distributions/backimage_gui/howto_1.jpg"></div>
+      <p class="card__text">スタート画面がこのような画面になっていればインストール成功です</p>
+      <p class="card__subtitle">画像準備</p>
+      <p class="card__text">Coming soon…</p>
     </div>
     <div class="card">
       <p class="card__title">更新履歴</p>
+      <p class="card__subtitle">1.3.0</p>
+      <p class="card__text">ベースのjsonを1.2.10.2に更新</p>
+      <p class="card__text">_global_variables.jsonを編集し画像置き換え時の挙動を変更できるように</p>
+      <p class="card__text">replaceモードを追加</p>
+      <p class="card__text">overlayモードを追加</p>
+      <p class="card__text">backgroundモードを追加</p>
+      <p class="card__text">disableモードを追加</p>
+      <p class="card__text">replaceモード時GUIの白い背景が透明になるように</p>
+      <p class="card__text">Chestに対応</p>
+      <p class="card__text">startスクリーンのUIを変更</p>
+      <p class="card__text">resolution.txtにアスペクト比を追加</p>
+      <a class="card__button" href="hhhahahsa">1.3.0</a>
       <p class="card__subtitle">1.2.2</p>
       <p class="card__text">クラフトのレシピ選択時所持していないアイテムのスロットが赤くならない不具合の修正</p>
       <a class="card__button" href="https://www.mediafire.com/folder/76mx31f3r55rw/1.2.2">1.2.2</a>
