@@ -1,0 +1,57 @@
+@import "../lib/variable";
+
+.materialy-card {
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: auto;
+  margin-top: 5px;
+  text-align: left;
+  border-radius: 2px;
+  background-color: $color--white;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.26);
+  flex-flow: column nowrap;
+  &__title {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem;
+  }
+  &__subtitle {
+    font-size: 1.2rem;
+    margin: 0.5rem 1rem;
+  }
+  &__text {
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+  &__image {
+    text-align: center;
+    &--title {
+      text-align: center;
+      & img {
+        width: 100%;
+      }
+    }
+    & img {
+      max-width: 75%;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+    }
+  }
+  &__border {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    vertical-align: top;
+    border: solid 1px $color--grey300;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .materialy-card {
+    width: 45%;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .materialy-card {
+    width: 95%;
+  }
+}
