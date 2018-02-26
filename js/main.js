@@ -3,7 +3,7 @@
   loadFile("https://riku1227.github.io/html/core/header.html",setupHeader);
 
   function setupHeader(html) {
-    document.getElementsByClassName('header')[0].innerHTML = html;
+    document.getElementsByClassName('materialy-toolbar')[0].innerHTML = html;
   }
 
   document.getElementById("test").innerHTML = window.navigator.userAgent.toLowerCase();
