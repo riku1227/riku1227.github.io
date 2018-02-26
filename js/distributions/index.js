@@ -32,7 +32,7 @@ function generateCard(json) {
       if(right <= left) {
         break;
       }
-      
+
       let tmp =jsonObject.card_list[left];
       jsonObject.card_list[left] =jsonObject.card_list[right];
       jsonObject.card_list[right] =tmp;
@@ -58,14 +58,14 @@ function generateCard(json) {
     const description = jsonObject.card_list[i].description;
     const linkDL = jsonObject.card_list[i].link_dl;
     const linkDetails = jsonObject.card_list[i].link_details;
-    const html = '<div class="cardList">'+
+    const html = '<div class="materialy-card cardList">'+
            `<img class="cardList__image" src="../../image/distributions/${thumbnail}/cover_image.jpg">`+
-           `<p class="cardList__title">${name}</p>`+
+           `<p class="materialy-card__title cardList__title">${name}</p>`+
            `<p class="cardList__text">最終更新日: ${dataStr}</p>`+
            `<p class="cardList__text">${description}</p>`+
-           '<div class="center">'+
-           `<a class="cardList__button" href="${linkDL}">ダウンロード</a>`+
-           `<a class="cardList__button" href="${linkDetails}">詳細</a>`+
+           '<div class="centerButton">'+
+           `<a class="materialy-button--flat--accent cardList__button" href="${linkDL}">ダウンロード</a>`+
+           `<a class="materialy-button--flat--accent cardList__button" href="${linkDetails}">詳細</a>`+
            '</div>'+
            '</div>';
     result += html;
