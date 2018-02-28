@@ -20,7 +20,8 @@ h1 {
 .materialy-mainContent {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 1.5rem; }
 
 @media screen and (min-width: 768px) {
   .materialy-mainContent {
@@ -32,11 +33,12 @@ h1 {
 
 .materialy-toolbar {
   font-size: 0.65rem;
+  position: fixed;
+  top: 0;
   display: flex;
   width: 100%;
   background-color: #673AB7;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  position: fixed; }
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
   .materialy-toolbar__title {
     display: inline-block;
     margin-left: 1rem;

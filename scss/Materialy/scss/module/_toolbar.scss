@@ -2,11 +2,12 @@
 
 .materialy-toolbar {
   font-size: 0.65rem;
+  position: fixed;
+  top: 0;
   display: flex;
   width: 100%;
   background-color: $color--primary;
   box-shadow: 0 2px 5px $color--boxshadow;
-  position: fixed;
   &__title {
     display: inline-block;
     margin-left: 1rem;
@@ -109,7 +110,7 @@
       height: 3.5rem;
       color: $color--grey800;
 
-      @extend .materialy-toolbar__content__title;
+@extend .materialy-toolbar__content__title;
 
       &:hover {
         background: $color--grey300;
