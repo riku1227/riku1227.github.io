@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#9575CD">
+  <link rel="stylesheet" href="../../css/style.min.css">
+  <link rel="stylesheet" href="../../css/vtlivechecker/index.css">
+  <title>VTuberLiveChecker</title>
+</head>
+<body ontouchstart="">
+  <header class="materialy-toolbar">
+  </header>
+  <div class="materialy-mainContent">
+    <div class="materialy-card">
+      <p class="materialy-card__title">VTuberLiveChecker</p>
+      <p class="materialy-card__text">VTuberのライブ状況を表示するサイトです</p>
+      <p class="materialy-card__text">Chrome(65)とFirefox(59)で動作確認</p>
+      <p class="materialy-card__text">操作方法(?)は下に書いてます</p>
+    </div>
+
+    <div class="vtlc-fullDiv" id="channels">
+    </div>
+
+    <div class="vtlc-unshow" id="template">
+      <div class="materialy-card">
+        <div class="vtlc-flexbox">
+          <a class="vtlc-channelIcon" href="channelUrl"><img class="materialy-center--inline" src="channelIconUrl"></a>
+          <div>
+            <p class="materialy-card__subtitle">channelName</p>
+            <p class="materialy-card__text">現在は生放送をしていません</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="materialy-card">
+      <p class="materialy-card__title">操作方法(?)</p>
+      <p class="materialy-card__text">・チャンネルアイコンクリックでそのアイコンのYoutubeチャンネルに行けます</p>
+      <p class="materialy-card__text">・Live中だとカードの部分が緑色になり生放送のタイトルをクリックすることでその生放送に飛べます</p>
+      <p class="materialy-card__text">・多分3分に一回更新されます(新しくLiveが始まっても音はなりません)</p>
+      <p class="materialy-card__text">・ライブの始め方が違うのかたまにapiに引っかからないLiveがあります</p>
+      <div class="materialy-card__border"></div>
+      <p class="materialy-card__text">Youtube Data API(v3) のテストを兼ねて作ったやーつ</p>
+      <p class="materialy-card__text">とりあえずにじさんじの1期生の方々をいれてます</p>
+      <p class="materialy-card__text">いつか表示するチャンネルをいじれるようにしたい</p>
+      <p class="materialy-card__text">端末によってUIが崩れる可能性があります(Htmlのレイアウトが難しすぎるのがいけないんだ…)</p>
+    </div>
+  </div>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/vtlivechecker/index.js"></script>
+</body>
+</html>
