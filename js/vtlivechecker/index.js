@@ -35,6 +35,17 @@ function setChannelListText() {
   getLiveInfo();
 }
 
+function setChannelListFile() {
+  let file = document.getElementById("channelEditorFile").files[0];
+  let reader = new FileReader();
+  reader.readAsText(file);
+  reader.addEventListener("load", function () {
+    document.cookie = "list="+encodeURIComponent(reader.result)+"; expires=Tue, 19 Jan 2038 03:14:07 GMT";
+    vTuberIdList = JSON.parse(reader.result);
+    getLiveInfo();
+  });
+}
+
 function cookieReset() {
   document.cookie = "list=a; max-age=0";
   location.reload();
