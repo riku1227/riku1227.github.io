@@ -48,6 +48,9 @@
 
 .vtlc-editText {
   width: 99%;
+  border: solid 1px #673AB7;
+  border-radius: 2px;
+  box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .vtlc-break {
