@@ -46,6 +46,14 @@
   display: none;
 }
 
+.vtlc-editText {
+  width: 99%;
+}
+
+.vtlc-break {
+  word-break: break-all;
+}
+
 /* Smartphone */
 @media only screen and (max-width: 480px) {
   .vtc-onlineText {

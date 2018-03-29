@@ -39,12 +39,29 @@
       <p class="materialy-card__text">・Live中だとカードの部分が緑色になり生放送のタイトルをクリックすることでその生放送に飛べます</p>
       <p class="materialy-card__text">・多分3分に一回更新されます(新しくLiveが始まっても音はなりません)</p>
       <p class="materialy-card__text">・ライブの始め方が違うのかたまにapiに引っかからないLiveがあります</p>
-      <p class="materialy-card__text">・Chrome(65)とFirefox(59)で動作確認</p>
+      <p class="materialy-card__text">・Chrome(65)とFirefox(59)とApple-WebKit(Win版)で動作確認</p>
       <div class="materialy-card__border"></div>
       <p class="materialy-card__text">Youtube Data API(v3) のテストを兼ねて作ったやーつ</p>
       <p class="materialy-card__text">とりあえずにじさんじの1期生の方々をいれてます</p>
       <p class="materialy-card__text">いつか表示するチャンネルをいじれるようにしたい</p>
       <p class="materialy-card__text">端末によってUIが崩れる可能性があります(Htmlのレイアウトが難しすぎるのがいけないんだ…)</p>
+    </div>
+
+    <div class="materialy-card">
+      <p class="materialy-card__title">チャンネルエディター()</p>
+      <input type="text" class="vtlc-editText" id="channelEditorText">
+      <a class="materialy-button--accent" onclick="setChannelListText()">設定</a>
+      <a class="materialy-button--accent" onclick="cookieReset()">リセット</a>
+      <a class="materialy-button--accent" download="nijisanji_1.txt" href="nijisanji_1.txt">にじさんじ1期サンプル</a>
+      <p class="materialy-card__text">※リセットを押しても更新されなかった場合はもう一度押すか、手動で再読込してください</p>
+      <div class="materialy-card__border"></div>
+      <p class="materialy-card__text">例</p>
+      <p class="materialy-card__text">1チャンネルのみ</p>
+      <p class="materialy-card__text vtlc-break">000000000000000000000000</p>
+      <p class="materialy-card__text">2チャンネル</p>
+      <p class="materialy-card__text vtlc-break">000000000000000000000000,000000000000000000000001</p>
+      <p class="materialy-card__text">3チャンネル</p>
+      <p class="materialy-card__text vtlc-break">000000000000000000000000,000000000000000000000001,000000000000000000000002</p>
     </div>
   </div>
   <script src="../../js/main.js"></script>
