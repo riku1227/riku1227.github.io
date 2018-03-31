@@ -18,7 +18,6 @@ let title = document.title;
 function setChannelListText() {
   let result = "[";
   let editTextValue = document.getElementById("channelEditorText").value.trim().split(",");
-  alert(document.getElementById("channelEditorText").value.replace(/\s+/g, ""));
   if(document.getElementById("channelEditorText").value == "") {
     return;
   }
