@@ -68,7 +68,7 @@ function generateCard(profileJson, liveJson) {
   let liveItems;
 
   const channelName = profileSnippet.title;
-  const channelIcon = profileSnippet.thumbnails.high.url;
+  const channelIcon = profileSnippet.thumbnails.medium.url;
   const channelUrl = profile.items[0].id;
   let liveTitle;
   let liveUrl;
