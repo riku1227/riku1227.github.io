@@ -44,14 +44,26 @@
   }
 }
 
-@media screen and (orientation: landscape) {
+@media only screen and (max-width: 480px) {
   .materialy-card {
-    width: 45%;
+    width: 85%;
   }
 }
 
-@media screen and (orientation: portrait) {
+@media only screen and (min-width: 480px) and (max-width: 900px) {
   .materialy-card {
-    width: 95%;
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .materialy-card {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .materialy-card {
+    width: 45%;
   }
 }
