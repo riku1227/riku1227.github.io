@@ -251,11 +251,11 @@ h1 {
 
 @media only screen and (max-width: 480px) {
   .materialy-card {
-    width: 85%; } }
+    width: 95%; } }
 
 @media only screen and (min-width: 480px) and (max-width: 900px) {
   .materialy-card {
-    width: 80%; } }
+    width: 90%; } }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .materialy-card {
