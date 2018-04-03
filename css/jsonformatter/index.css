@@ -1,0 +1,6 @@
+.jsonTextArea {
+  width: 97%;
+  height: 14rem;
+  resize: none;
+  border: solid 1px #673ab7;
+}

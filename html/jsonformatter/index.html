@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#9575CD">
+  <link rel="stylesheet" href="../../css/style.min.css">
+  <link rel="stylesheet" href="../../css/jsonformatter/index.css">
+  <title>riku1227 WebSite</title>
+</head>
+<body ontouchstart="">
+  <header class="materialy-toolbar">
+  </header>
+  <div class="materialy-mainContent">
+    <div class="materialy-card">
+      <p class="materialy-card__title">Json Formatter</p>
+      <p class="materialy-card__text">Jsonを整形するツールです</p>
+      <p class="materialy-card__text">※未完成</p>
+    </div>
+
+    <div class="materialy-card">
+      <p class="materialy-card__text">整形前のJson</p>
+      <div class="materialy-center--block">
+        <textarea class="jsonTextArea" id="before"></textarea>
+        <a class="materialy-button--accent" onclick="onClickFormatJson()">整形</a>
+      </div>
+      <p class="materialy-card__text">整形後のJson</p>
+      <div class="materialy-center--block">
+        <textarea class="jsonTextArea" id="after"></textarea>
+      </div>
+    </div>
+    <div class="materialy-card">
+      <p class="materialy-card__title">コードスタイル</p>
+      <p class="materialy-card__subtitle">未実装</p>
+      <p class="materialy-card__text">インデントに使う文字とかインデントの位置とかカッコの中が空のときにどうするかとか選べるようにする予定</p>
+    </div>
+  </div>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/jsonformatter/index.js"></script>
+</body>
+</html>
