@@ -255,7 +255,7 @@ h1 {
 
 @media only screen and (min-width: 480px) and (max-width: 900px) {
   .materialy-card {
-    width: 70%; } }
+    width: 80%; } }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .materialy-card {
