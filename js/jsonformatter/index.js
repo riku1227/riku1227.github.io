@@ -31,11 +31,14 @@ const onClickFormatJson = function () {
       case "{":
         if(strMode === "strStart") {
           result += "{";
+        } else if(beforeJson[i - 1] === ":") {
+          result += " {";
+          indentLevel++;
         } else if(mode === "arrayStart"){
           result += "\n" + space.repeat(indentLevel) + "{";
           indentLevel++;
         } else {
-          result += " {";
+          result += "{";
           indentLevel++;
         }
         break;
@@ -53,13 +56,12 @@ const onClickFormatJson = function () {
         if(strMode === "strStart") {
           result += "[";
         } else {
-          /* if(beforeJson[i - 1] === ",") {
-            result += "\n";
-          } */
-          if(mode === "arrayStart") {
+          if(beforeJson[i - 1] === ":") {
+            result += " [";
+          } else if(mode === "arrayStart") {
             result += "\n" + space.repeat(indentLevel) + "[";
           } else {
-            result += " [";
+            result += "[";
           }
           mode = "arrayStart";
           indentLevel++;
