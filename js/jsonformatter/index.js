@@ -10,7 +10,7 @@ const onClickFormatJson = function () {
   let numberMode = "none";
   let mode = "none";
   let isObject = false;
-  const space = "  ";
+  const space = document.getElementById("useChar").value.repeat(document.getElementById("useCharNum").value);
 
   if(beforeJson[0] === "{") {
     isObject = true;
