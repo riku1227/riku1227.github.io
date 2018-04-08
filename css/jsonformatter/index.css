@@ -17,3 +17,11 @@
 .jsonEditText + label {
   color: #673ab7;
 }
+
+.jsonCheckBox {
+  display: block;
+}
+
+.jsonCheckBox + label {
+  color: #673ab7;
+}

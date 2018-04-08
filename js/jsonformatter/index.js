@@ -11,6 +11,7 @@ const onClickFormatJson = function () {
   let mode = "none";
   let isObject = false;
   const space = document.getElementById("useChar").value.repeat(document.getElementById("useCharNum").value);
+  const bracketLine = document.getElementById("newLineBracketAndBrace").checked;
 
   if(beforeJson[0] === "{") {
     isObject = true;
@@ -32,7 +33,7 @@ const onClickFormatJson = function () {
         if(strMode === "strStart") {
           result += "{";
         } else if(beforeJson[i - 1] === ":") {
-          result += " {";
+          result += bracketLine? `\n${space.repeat(indentLevel)}{` : " {";
           indentLevel++;
         } else if(mode === "arrayStart"){
           result += "\n" + space.repeat(indentLevel) + "{";
@@ -57,7 +58,7 @@ const onClickFormatJson = function () {
           result += "[";
         } else {
           if(beforeJson[i - 1] === ":") {
-            result += " [";
+            result += bracketLine? `\n${space.repeat(indentLevel)}[` : " [";
           } else if(mode === "arrayStart") {
             result += "\n" + space.repeat(indentLevel) + "[";
           } else {
