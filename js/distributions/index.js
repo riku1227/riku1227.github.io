@@ -1,9 +1,5 @@
 "use strict";
-(function () {
-  loadFile("https://riku1227.github.io/json/distributions/index.json",generateCard);
-}());
-
-function loadFile(url,callback) {
+const loadFile = function(url,callback) {
   const request = new XMLHttpRequest();
   request.open("get", url, true);
   request.callback = callback
@@ -11,13 +7,13 @@ function loadFile(url,callback) {
     this.callback.call(this,request.responseText);
   }
   request.send(null);
-}
+};
 
-function generateCard(json) {
+const generateCard = function(json) {
   let result = "";
   const jsonObject = JSON.parse(json);
 
-  function quickSort(startID, endID) {
+  const quickSort = function(startID, endID) {
     let pivot = jsonObject.card_list[Math.floor((startID + endID)/2)].data;
     let left = startID;
     let right = endID;
@@ -71,4 +67,8 @@ function generateCard(json) {
     result += html;
   }
   document.getElementsByClassName('center')[0].innerHTML=result;
-}
+};
+
+(function () {
+  loadFile("https://riku1227.github.io/json/distributions/index.json",generateCard);
+}());
