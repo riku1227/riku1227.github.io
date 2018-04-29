@@ -1,0 +1,125 @@
+{
+  "information": {
+    "name": "BackImageGUI",
+    "description": "GUIの背景を画像に変更できるようになるリソースパックです。 replaceモードやoverlayモードなどの画像置き換え時の挙動を変更することができます"
+  },
+  "cards": [
+    {
+      "title": "機能",
+
+      "content":[
+        "1.GUIの画像を画像に変更できるようになります",
+        "2._global_variables.jsonを編集することで画像置き換え時の挙動を変更できます",
+        "3.インベントリの\"?\"ボタンを非表示にするオプションがあります",
+        "$subTitle(各種モード)",
+        "replaceモード: GUIの背景を画像に置き換えます",
+        "overlayモード: 半透明(alpha:0.6)の画像をGUIの上に被せます(インベントリの画像を合成させる必要がありません)",
+        "backgroundモード: GUIの後ろに画像を置きます",
+        "disableモード: 画像を非表示にします"
+      ]
+    },
+    {
+      "title": "動作環境",
+
+      "content": [
+        "Minecraft : 1.2.13.60(で確認)",
+        "他のバージョンでも使用できる場合や使用できない場合があります"
+      ]
+    },
+    {
+      "title": "ダウンロード",
+
+      "content": [
+        "最新バージョン: 1.4.0",
+        "ファイルをダウンロードした時点で<a href=\"../license.html\">ライセンス</a>に同意したことになります",
+        "$link(mcpack,https://www.mediafire.com/download/cz6zxqcyavdn4mz) $link(zip,https://www.mediafire.com/download/tz8nt82e6uvyhe2)"
+      ]
+    },
+    {
+      "title": "スクリーンショット",
+
+      "content": [
+        "$img(screenshot_1.jpg)",
+        "$img(screenshot_2.jpg)",
+        "replaceモード時の作業台(角を丸くしたい場合は画像編集ソフトで角を編集してください)",
+        "ベースにR3DCraft 画像はアズールレーン(Azur Lane)のZ19を使用しています",
+        "$img(screenshot_3.jpg)",
+        "$img(screenshot_4.jpg)",
+        "overlayモード時の作業台(画像は適切なアスペクト比に切り抜く必要があります)",
+        "画像はアズールレーン(Azur Lane)のZ19を使用しています",
+        "$img(screenshot_5.jpg)",
+        "$img(screenshot_6.jpg)",
+        "backgroundモード時の作業台(画像は使用している端末の画面アスペクト比に合わせる必要があります)",
+        "画像はアズールレーン(Azur Lane)のZ19を使用しています(GUIで隠れてしまうため少し右にずらしています)",
+        "$img(screenshot_7.jpg)",
+        "\"?\"ボタンを非表示にした時のインベントリ",
+        "$img(screenshot_8.jpg)",
+        "_global_variables.jsonの中身 (ui/_global_variables.json)",
+        "$img(screenshot_9.jpg)",
+        "リソースパックのサブパックの設定ボタン",
+        "$img(screenshot_10.jpg)",
+        "サブパックの全設定"
+      ]
+    },
+    {
+      "title": "使い方",
+
+      "content": [
+        "$title(Android)",
+        "$subTitle(インストール)",
+        "まずダウンロードのmcpackを押し、真ん中に出てきた緑色のダウンロードボタンを押して、ファイルをダウンロードしてください",
+        "ダウンロードが終わったら、ファイルマネージャーでダウンロードしたファイルを押し、Minecraftで開いてください",
+        "Minecraftで開きインポート成功と出たら、設定→グローバルリソース 利用可能なリソースパックの中にあるBackImageGUIを押しプラスを押して、使用中のパックに移動したらMinecraftを再起動してください",
+        "$img(howto_1.jpg)",
+        "スタート画面がこのような画面になっていればインストール成功です",
+        "$subTitle(画像準備)",
+        "Coming soon…"
+      ]
+    },
+    {
+      "title": "更新履歴",
+
+      "content": [
+        "$subTitle(1.4.0)",
+        "ベースのjsonを1.2.13.60に更新",
+        "選択したアイテムの名前を表示するように",
+        "3つ(デフォルト・インベントリの\"?\"非表示にする・無効化)のサブパックを追加",
+        "$link(1.4.0,https://www.mediafire.com/folder/lc9ufhh57j536/1.4.0)",
+        "$subTitle(1.3.1)",
+        "ベースのjsonを1.2.13.54に更新",
+        "$link(1.3.1,https://www.mediafire.com/folder/t3exhuhyspaaj/1.3.1)",
+        "$subTitle(1.3.0)",
+        "ベースのjsonを1.2.10.2に更新",
+        "_global_variables.jsonを編集し画像置き換え時の挙動を変更できるように",
+        "replaceモードを追加",
+        "overlayモードを追加",
+        "backgroundモードを追加",
+        "disableモードを追加",
+        "replaceモード時GUIの白い背景が透明になるように",
+        "Chestに対応",
+        "startスクリーンのUIを変更",
+        "resolution.txtにアスペクト比を追加",
+        "$link(1.3.0,https://www.mediafire.com/folder/yaiblxeda7lbc/1.3.0)",
+        "$subTitle(1.2.2)",
+        "クラフトのレシピ選択時所持していないアイテムのスロットが赤くならない不具合の修正",
+        "$link(1.2.2,https://www.mediafire.com/folder/76mx31f3r55rw/1.2.2)",
+        "$subTitle(1.2.1)",
+        "ベースのjsonを1.2.5.52に更新",
+        "インベントリを1.2.5スタイルに更新",
+        "金床のテキスト入力欄が半透明にならないようにした",
+        "ui_common.jsonを削除",
+        "背景画像を作らないGUIのjsonを削除すると通常のGUIが表示されるようにした",
+        "$link(1.2.1,https://www.mediafire.com/folder/2qj50bri9eiva/1.2.1)",
+        "$subTitle(1.1.0)",
+        "1.2.1.1でワールド編集・作成画面でゲームモードが変更できない不具合の修正",
+        "ラージチェストの背景画像化に対応",
+        "trade.pngが入っていなかったのを修正",
+        "resolution.txtを追加",
+        "$link(1.1.0,https://www.mediafire.com/folder/w013l1wogl3q6/1.1.0)",
+        "$subTitle(1.0.0)",
+        "初リリース",
+        "$link(1.0.0,https://www.mediafire.com/folder/dwzq19hav3pk3/1.0.0)"
+      ]
+    }
+  ]
+}
