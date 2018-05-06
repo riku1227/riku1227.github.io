@@ -142,6 +142,26 @@ const generateContent = function(json) {
 };
 
 (function () {
+
+  let target = document.getElementsByClassName("materialy-toolbar")[0];
+
+  let observerHeader = function() {
+    let onChange = function() {
+      if(window.innerWidth >= 1024) {
+        let bool = this.checked;
+        if(bool) {
+          document.getElementsByClassName("center")[0].style.marginLeft = "0px";
+        } else {
+          document.getElementsByClassName("center")[0].style.marginLeft = "250px";
+        }
+      }
+    }
+    document.getElementById("materialy-toolbar__checkbox").addEventListener("change", onChange);
+  }
+
+  let mo = new MutationObserver(observerHeader);
+  mo.observe(target, {childList: true});
+
   let urlParameter = location.search.substring(1);
   if(urlParameter === "") {
     loadFile("https://riku1227.github.io/json/distributions/index.json",generateCard);

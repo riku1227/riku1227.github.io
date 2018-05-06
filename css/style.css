@@ -21,8 +21,7 @@ h1 {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin-bottom: 1.5rem;
-  width: 100%; }
+  margin-bottom: 1.5rem; }
 
 @media screen and (min-width: 768px) {
   .materialy-mainContent {
@@ -150,6 +149,8 @@ h1 {
     height: 64px; } }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
+  .center {
+    margin-left: 250px; }
   .materialy-toolbar__humbergerTrigger--checkbox:checked ~ .materialy-toolbar__humbergerTrigger {
     transform: rotate(360deg); }
   .materialy-toolbar__humbergerTrigger--checkbox:checked ~ .materialy-toolbar__humbergerTrigger span:nth-of-type(1) {

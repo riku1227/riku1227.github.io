@@ -148,6 +148,9 @@
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
+  .center {
+    margin-left: 250px;
+  }
   .materialy-toolbar {
     &__humbergerTrigger {
       &--checkbox {
