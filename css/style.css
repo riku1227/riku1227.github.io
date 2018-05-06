@@ -149,6 +149,22 @@ h1 {
     line-height: 64px;
     height: 64px; } }
 
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .materialy-toolbar__humbergerTrigger--checkbox:checked ~ .materialy-toolbar__humbergerTrigger {
+    transform: rotate(360deg); }
+  .materialy-toolbar__humbergerTrigger--checkbox:checked ~ .materialy-toolbar__humbergerTrigger span:nth-of-type(1) {
+    width: 1.2rem;
+    transform: none; }
+  .materialy-toolbar__humbergerTrigger--checkbox:checked ~ .materialy-toolbar__humbergerTrigger span:nth-of-type(3) {
+    width: 1.2rem;
+    transform: none; }
+  .materialy-toolbar__humbergerTrigger--checkbox:checked ~ .materialy-toolbar__content {
+    transform: translateX(-105%) translateY(62px); }
+  .materialy-toolbar__humbergerTrigger--checkbox:checked ~ .materialy-toolbar__content--close {
+    display: none; }
+  .materialy-toolbar__content {
+    transform: translateX(0%) translateY(62px); } }
+
 @media screen and (max-width: 767px) {
   .materialy-toolbar {
     line-height: 54px;
