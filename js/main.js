@@ -6,8 +6,6 @@
     document.getElementsByClassName('materialy-toolbar')[0].innerHTML = html;
   }
 
-  document.getElementById("test").innerHTML = window.navigator.userAgent.toLowerCase();
-
   function loadFile(url,callback) {
     const request = new XMLHttpRequest();
     request.open("get", url, true);
