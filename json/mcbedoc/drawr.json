@@ -1,0 +1,45 @@
+[
+  {
+    "name": "基本",
+    "content": [
+      {
+        "name": "manifestの書き方",
+        "content": "how_to_write_manifest"
+      }
+    ]
+  },
+  {
+    "name": "ビヘイビア",
+    "content": [
+      {
+        "name": "コンポーネント",
+        "content": [
+          {
+            "name": "minecraft:attack",
+            "content": "minecraft_attack"
+          }
+        ]
+      },
+      {
+        "name": "イベント",
+        "content": [
+        ]
+      },
+      {
+        "name": "エンティティ",
+        "content": [
+        ]
+      },
+      {
+        "name": "ルートテーブル",
+        "content": [
+        ]
+      }
+    ]
+  },
+  {
+    "name": "リソースパック",
+    "content": [
+    ]
+  }
+]
