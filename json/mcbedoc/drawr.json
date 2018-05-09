@@ -1,6 +1,7 @@
 [
   {
-    "name": "基本",
+    "name": "全般",
+    "namespace": "general",
     "content": [
       {
         "name": "manifestの書き方",
@@ -10,9 +11,11 @@
   },
   {
     "name": "ビヘイビア",
+    "namespace": "behavior",
     "content": [
       {
         "name": "コンポーネント",
+        "namespace": "component",
         "content": [
           {
             "name": "minecraft:attack",
@@ -22,16 +25,19 @@
       },
       {
         "name": "イベント",
+        "namespace": "event",
         "content": [
         ]
       },
       {
         "name": "エンティティ",
+        "namespace": "entity",
         "content": [
         ]
       },
       {
         "name": "ルートテーブル",
+        "namespace": "loot_table",
         "content": [
         ]
       }
@@ -39,6 +45,7 @@
   },
   {
     "name": "リソースパック",
+    "namespace": "resource_pack",
     "content": [
     ]
   }
