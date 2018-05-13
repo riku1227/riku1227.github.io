@@ -148,9 +148,6 @@
 }
 
 @media screen and (min-width: 1024px) and (orientation: landscape) {
-  .center {
-    margin-left: 250px;
-  }
   .materialy-toolbar {
     &__humbergerTrigger {
       &--checkbox {
@@ -167,7 +164,7 @@
             transform: none;
           }
           &~.materialy-toolbar__content {
-            transform: translateX(-105%) translateY($layout__toolbar--desktop--height - 2px);
+            transform: translateX(0%) translateY($layout__toolbar--desktop--height - 2px);
           }
           &~.materialy-toolbar__content--close {
             display: none;
@@ -177,7 +174,7 @@
     }
 
     &__content {
-      transform: translateX(0%) translateY($layout__toolbar--desktop--height - 2px);
+      transform: translateX(-105%) translateY($layout__toolbar--desktop--height - 2px);
     }
   }
 }

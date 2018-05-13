@@ -150,9 +150,9 @@ const generateContent = function(json) {
       if(window.innerWidth >= 1024) {
         let bool = this.checked;
         if(bool) {
-          document.getElementsByClassName("center")[0].style.marginLeft = "0px";
-        } else {
           document.getElementsByClassName("center")[0].style.marginLeft = "250px";
+        } else {
+          document.getElementsByClassName("center")[0].style.marginLeft = "0px";
         }
       }
     }
