@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#673AB7">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>riku1227 WebSite</title>
+  <style type="text/css">
+    p {
+      word-wrap:break-word;
+    }
+  </style>
+</head>
+<body ontouchstart="">
+  <header class="materialy-toolbar">
+  </header>
+  <div class="materialy-mainContent">
+    <div class="materialy-card">
+      <p class="materialy-card__title">mlistファイル</p>
+      <p class="materialy-card__subtitle">最終更新日: 2018/12/01</p>
+      <p class="materialy-card__subtitle">対象バージョン: 0.00.01~</p>
+      <p class="materialy-card__text">※この記事は不明な部分や適当な部分が多々あります。</p>
+      <p class="materialy-card__text">※間違えてる部分がかなりあると思われます</p>
+    </div>
+    <div class="materialy-card">
+      <p class="materialy-card__title">解説</p>
+      <p class="materialy-card__text">mlistファイルは</p>
+      <p class="materialy-card__subtitle">ID,menuファイル名,アイコンに使用するファイル名,パーツの名前,カテゴリ,部位のカラー名,カラーセットのファイル名,優先度,複数選択時メインとなるmenuファイル名,表示させるmenuファイル名,IsDelete,MultiColorID</p>
+      <p class="materialy-card__text">の順番で書くCSVファイルです。</p>
+    </div>
+    <div class="materialy-card">
+      <p class="materialy-card__title">詳細</p>
+      <p class="materialy-card__subtitle">ID</p>
+      <p class="materialy-card__text">型: 数値(int)</p>
+      <p class="materialy-card__text">このIDはできるだけかぶらないようにしてください。</p>
+      <p class="materialy-card__text">同じIDにしても一応は動きますが、一部機能が使用できなくなるので非推奨です。</p>
+      <p class="materialy-card__subtitle">menuファイル名</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">使用するmenuファイルのファイル名です</p>
+      <p class="materialy-card__text">Assetファイルの名前に.bytesを付けてい場合でも、.bytesを付けず.menuで終わらせてください。</p>
+      <p class="materialy-card__subtitle">アイコンに使用するファイル名</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">表示するアイコンのファイル名です。</p>
+      <p class="materialy-card__text">ファイル名の拡張子は.pngでも.texでも大丈夫です。</p>
+      <p class="materialy-card__text">カスタムキャストは.texでやってます。</p>
+      <p class="materialy-card__subtitle">パーツの名前</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">表示されるパーツの名前です。</p>
+      <p class="materialy-card__text">ソフィアメイドウェアなど</p>
+      <p class="materialy-card__subtitle">カテゴリ</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">そのパーツのカテゴリです。</p>
+      <p class="materialy-card__text">hairrやmizugiなど</p>
+      <p class="materialy-card__text">詳しくはparts.assetsなどを覗きましょう。</p>
+      <p class="materialy-card__subtitle">部位のカラー名(MpnColorSet)</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">そのパーツの部位カラー名です。</p>
+      <p class="materialy-card__text">基本はnull_mpnと書きます。</p>
+      <p class="materialy-card__text">haircolorなど</p>
+      <p class="materialy-card__text">詳しくはparts.assetsなどを覗きましょう。</p>
+      <p class="materialy-card__subtitle">カラーセットのファイル名(ColorSetFilesName)</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">不明</p>
+      <p class="materialy-card__text">_i_haircolor_*.menuなど</p>
+      <p class="materialy-card__text">詳しくはparts.assetsなどを覗きましょう。</p>
+      <p class="materialy-card__subtitle">優先度</p>
+      <p class="materialy-card__text">型: 数値(float)</p>
+      <p class="materialy-card__text">小さくなるほど前に表示されます。</p>
+      <p class="materialy-card__text">同じ数字を使用しても大丈夫です。</p>
+      <p class="materialy-card__subtitle">複数選択時メインとなるmenuファイル名</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">色変更などの一つの枠に複数のパーツを入れ込む時、メインとなるmenuファイルのファイル名を書きます。</p>
+      <p class="materialy-card__text">メインとなるmenuファイルや単体の場合は書かなくて大丈夫です。</p>
+      <p class="materialy-card__text">詳しくはparts.assetsなどを覗きましょう。</p>
+      <p class="materialy-card__subtitle">表示させるmenuファイル名</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">色変更などの一つの枠に複数のパーツを入れ込む場合と単体の場合で書き方が変わります。</p>
+      <p class="materialy-card__text">単体の場合</p>
+      <p class="materialy-card__text">使用するmenuファイル名を書いてください。</p>
+      <p class="materialy-card__text">複数の場合</p>
+      <p class="materialy-card__text">メインとなるmenuファイルの部分に書いてください</p>
+      <p class="materialy-card__text">サブとなるmenuファイルの部分には書かないでください</p>
+      <p class="materialy-card__text">「メインとなるmenuファイル名|サブmenuファイル|サブmenuファイル|」</p>
+      <p class="materialy-card__text">のように書いてください。</p>
+      <p class="materialy-card__text">一番後ろにも「|」を書かないと正常に動作しません。</p>
+      <p class="materialy-card__subtitle">IsDelete</p>
+      <p class="materialy-card__text">型: bool</p>
+      <p class="materialy-card__text">不明</p>
+      <p class="materialy-card__text">基本「False」と書きます。</p>
+      <p class="materialy-card__text">詳しくはparts.assetsなどを覗きましょう。</p>
+      <p class="materialy-card__subtitle">MultiColorID</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">不明</p>
+      <p class="materialy-card__text">基本「NONE」と書きます。</p>
+      <p class="materialy-card__text">詳しくはparts.assetsなどを覗きましょう。</p>
+    </div>
+    <div class="materialy-card">
+      <p class="materialy-card__title">例</p>
+      <p class="materialy-card__subtitle">例 1(単体)</p>
+      <p class="materialy-card__text">2106891193,dress038_skrt_i_.menu,dress038_skrt_i_.tex,ノーブルスカート,skirt,null_mpn,,3,,dress038_skrt_i_.menu,False,NONE</p>
+      <p class="materialy-card__subtitle">例 2(複数)</p>
+      <p class="materialy-card__text">107280663,dress037_wear_i_.menu,dress037_wear_i_.tex,クールパーカー,wear,null_mpn,,3,,dress037_wear_i_.menu|dress037_z1_wear_i_.menu|dress037_z2_wear_i_.menu|dress037_z3_wear_i_.menu|dress037_z4_wear_i_.menu|,False,NONE</p>
+      <p class="materialy-card__text">1680663101,dress037_z1_wear_i_.menu,dress037_z1_wear_i_.tex,クールパーカー・青,wear,null_mpn,,3,dress037_wear_i_.menu,,False,NONE</p>
+      <p class="materialy-card__text">-1472334150,dress037_z2_wear_i_.menu,dress037_z2_wear_i_.tex,クールパーカー・緑,wear,null_mpn,,3,dress037_wear_i_.menu,,False,NONE</p>
+      <p class="materialy-card__text">-26911941,dress037_z3_wear_i_.menu,dress037_z3_wear_i_.tex,クールパーカー・黒,wear,null_mpn,,3,dress037_wear_i_.menu,,False,NONE</p>
+      <p class="materialy-card__text">-2063700040,dress037_z4_wear_i_.menu,dress037_z4_wear_i_.tex,クールパーカー・黄,wear,null_mpn,,3,dress037_wear_i_.menu,,False,NONE</p>
+    </div>
+  </div>
+  <script async src="../../js/main.js"></script>
+</body>
+</html>
