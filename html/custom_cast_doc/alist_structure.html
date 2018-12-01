@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#673AB7">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>riku1227 WebSite</title>
+  <style type="text/css">
+    p {
+      word-wrap:break-word;
+    }
+  </style>
+</head>
+<body ontouchstart="">
+  <header class="materialy-toolbar">
+  </header>
+  <div class="materialy-mainContent">
+    <div class="materialy-card">
+      <p class="materialy-card__title">alistファイル</p>
+      <p class="materialy-card__subtitle">最終更新日: 2018/12/01</p>
+      <p class="materialy-card__subtitle">対象バージョン: 0.00.01~</p>
+    </div>
+    <div class="materialy-card">
+      <p class="materialy-card__title">解説</p>
+      <p class="materialy-card__text">alistファイルは</p>
+      <p class="materialy-card__subtitle">ID(?),ファイル名,ファイルパス,ファイルサイズ</p>
+      <p class="materialy-card__text">の順番で書くCSVファイルです。</p>
+    </div>
+    <div class="materialy-card">
+      <p class="materialy-card__title">詳細</p>
+      <p class="materialy-card__subtitle">ID(?)</p>
+      <p class="materialy-card__text">型: 数値</p>
+      <p class="materialy-card__text">カスタムキャストはこの部分を使用していないので0で大丈夫です。</p>
+      <p class="materialy-card__subtitle">ファイル名</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">使用するAssetのファイル名です。</p>
+      <p class="materialy-card__text">Assetのファイル名が「hoge.png」の場合</p>
+      <p class="materialy-card__text">hoge.pngと書きます。</p>
+      <p class="materialy-card__subtitle">ファイルパス</p>
+      <p class="materialy-card__text">型: 文字列</p>
+      <p class="materialy-card__text">使用するAssetのAsset Bundle内のファイルパスです。</p>
+      <p class="materialy-card__text">(UnityプロジェクトのAssets/)gamedata/_append/hoge/test.txt.bytes</p>
+      <p class="materialy-card__text">という感じにファイルを設置した場合</p>
+      <p class="materialy-card__text">Assets/gamedata/_append/hoge/test.txt</p>
+      <p class="materialy-card__text">と書きます</p>
+      <p class="materialy-card__text">bytesは「Unity AssetBundle bytes」で検索</p>
+      <p class="materialy-card__subtitle">ファイルサイズ</p>
+      <p class="materialy-card__text">型: 数値(ulong)</p>
+      <p class="materialy-card__text">使用するAssetのAsset Bundle内のファイルサイズ(byte)です。</p>
+      <p class="materialy-card__text">モデルやmenuなどはちゃんと書かないと正常に機能しなくなります。</p>
+      <p class="materialy-card__text">pngなどのTextureはファイルサイズを使用していないため0でも大丈夫です。</p>
+    </div>
+    <div class="materialy-card">
+      <p class="materialy-card__title">例</p>
+      <p class="materialy-card__text">gamedata/_append/hoge/test.txt.bytesに設置したファイルサイズ156byteの場合</p>
+      <p class="materialy-card__subtitle">0,test.txt,gamedata/_append/hoge/test.txt,156</p>
+      <p class="materialy-card__text">となります。</p>
+    </div>
+  </div>
+  <script async src="../../js/main.js"></script>
+</body>
+</html>
