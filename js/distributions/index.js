@@ -55,18 +55,18 @@ const generateCard = function(json) {
     const linkDL = jsonObject.card_list[i].link_dl;
     const linkDetails = jsonObject.card_list[i].link_details;
     const html = '<div class="materialy-card cardList">'+
-           `<img class="cardList__image" src="../../image/distributions/${thumbnail}/cover_image.jpg">`+
-           `<p class="materialy-card__title cardList__title">${name}</p>`+
-           `<p class="cardList__text">最終更新日: ${dataStr}</p>`+
-           `<p class="cardList__text">${description}</p>`+
+           `<img class="materialy-card--media__top" src="../../image/distributions/${thumbnail}/cover_image.jpg">`+
+           `<p class="materialy-card--title materialy-layout--no-margin">${name}</p>`+
+           `<p class="materialy-card--text">最終更新日: ${dataStr}</p>`+
+           `<p class="materialy-card--text">${description}</p>`+
            '<div class="centerButton">'+
-           `<a class="materialy-button--flat--accent cardList__button" href="${linkDL}">ダウンロード</a>`+
-           `<a class="materialy-button--flat--accent cardList__button" href="${linkDetails}">詳細</a>`+
+           `<a class="materialy-button--text__accent cardList__button" href="${linkDL}">ダウンロード</a>`+
+           `<a class="materialy-button--text__accent cardList__button" href="${linkDetails}">詳細</a>`+
            '</div>'+
            '</div>';
     result += html;
   }
-  document.getElementsByClassName('center')[0].innerHTML=result;
+  document.getElementsByClassName('materialy-layout--linearlayout__horizontal__full')[0].innerHTML=result;
 };
 
 let urlName = "";
@@ -81,16 +81,16 @@ const generateContent = function(json) {
     headArray[12].content = "https://riku1227.github.io/image/distributions/" + urlName + "/cover_image.jpg";
     headArray[13].content = jsonObject.information.description;
 
-    document.getElementsByClassName("center")[0].className = "materialy-mainContent";
+    document.getElementsByClassName("materialy-layout--linearlayout__horizontal__full")[0].className = "materialy-mainContent";
     let htmlResult = "";
-    const titleTagName = "materialy-card__title";
-    const subTitleName = "materialy-card__subtitle";
-    const textTag = "materialy-card__text";
-    const linkTagName = "materialy-button--flat--accent";
-    const imageTagName = "materialy-card__image";
+    const titleTagName = "materialy-card--title";
+    const subTitleName = "materialy-card--subtitle";
+    const textTag = "materialy-card--text";
+    const linkTagName = "materialy-button--text__accent";
+    const imageTagName = "materialy-card--media__top";
 
     let infoCard = `<div class="materialy-card">`+
-    `<div class="materialy-card__image--title"> <img src="../../image/distributions/${urlName}/cover_image.jpg"> </div>`+
+    `<div class="materialy-card--media__top"> <img src="../../image/distributions/${urlName}/cover_image.jpg"> </div>`+
     `<p class="${titleTagName}">${jsonObject.information.name}</p>`+
     `<p class="${textTag}">${jsonObject.information.description}</p>`+
     `</div>`;
@@ -134,9 +134,9 @@ const generateContent = function(json) {
       cardHtml += `</div>`;
       htmlResult += cardHtml;
     }
-    document.getElementsByClassName("materialy-mainContent")[0].innerHTML = htmlResult;
+    document.getElementsByClassName("materialy-layout--linearlayout__horizontal__full")[0].innerHTML = htmlResult;
   } catch (e) {
-    document.getElementsByClassName("materialy-mainContent")[0].innerHTML = "お探しのページは存在しません";
+    document.getElementsByClassName("materialy-layout--linearlayout__horizontal__full")[0].innerHTML = "お探しのページは存在しません";
     console.log(e);
   }
 };
@@ -145,7 +145,7 @@ const generateContent = function(json) {
 
   let target = document.getElementsByClassName("materialy-toolbar")[0];
 
-  let observerHeader = function() {
+  /* let observerHeader = function() {
     let onChange = function() {
       if(window.innerWidth >= 1024) {
         let bool = this.checked;
@@ -160,7 +160,7 @@ const generateContent = function(json) {
   }
 
   let mo = new MutationObserver(observerHeader);
-  mo.observe(target, {childList: true});
+  mo.observe(target, {childList: true}); */
 
   let urlParameter = location.search.substring(1);
   if(urlParameter === "") {

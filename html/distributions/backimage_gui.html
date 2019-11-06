@@ -1,131 +1,133 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="theme-color" content="#673AB7">
-  <link rel="stylesheet" href="../../css/style.min.css">
-  <title>BackImageGUI - riku1227 Website</title>
+  <meta name="theme-color" content="#9c27b0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/materialy.min.css">
+  <title>BackImageGUI - RiFun</title>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@_riku1227_" />
-  <meta property="og:site_name" content="riku1227 Website" />
-  <meta property="og:title" content="BackImageGUI - riku1227 Website" />
+  <meta property="og:site_name" content="RiFun" />
+  <meta property="og:title" content="BackImageGUI - RiFun" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://riku1227.github.io/html/distributions/backimage_gui.html" />
   <meta property="og:image" content="https://riku1227.github.io/image/distributions/backimage_gui/cover_image.jpg" />
   <meta property="og:description" content="GUIの背景を画像に変更できるようになるリソースパックです" />
 </head>
+
 <body ontouchstart="">
-  <header class="materialy-toolbar">
-  </header>
-  <div class="materialy-mainContent">
-    <div class="materialy-card">
-      <div class="materialy-card__image--title"> <img src="../../image/distributions/backimage_gui/cover_image.jpg"> </div>
-      <p class="materialy-card__title">BackImageGUI</p>
-      <p class="materialy-card__text">GUIの背景を画像に変更できるようになるリソースパックです</p>
-      <p class="materialy-card__text">replaceモードやoverlayモードなどの画像置き換え時の挙動を変更することができます</p>
-    </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">機能</p>
-      <p class="materialy-card__text">1.GUIの画像を画像に変更できるようになります</p>
-      <p class="materialy-card__text">2._global_variables.jsonを編集することで画像置き換え時の挙動を変更できます</p>
-      <p class="materialy-card__subtitle">各種モード</p>
-      <p class="materialy-card__text">replaceモード: GUIの背景を画像に置き換えます</p>
-      <p class="materialy-card__text">overlayモード: 半透明(alpha:0.6)の画像をGUIの上に被せます(インベントリの画像を合成させる必要がありません)</p>
-      <p class="materialy-card__text">backgroundモード: GUIの後ろに画像を置きます</p>
-      <p class="materialy-card__text">disableモード: 画像を非表示にします</p>
-      <p class="materialy-card__text">3.インベントリの"?"ボタンを非表示にする</p>
-    </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">動作環境</p>
-      <p class="materialy-card__text">Minecraft : 1.2.13.60(で確認)</p>
-      <p class="materialy-card__text">他のバージョンでも使用できる場合や使用できない場合があります</p>
-    </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">ダウンロード</p>
-      <p class="materialy-card__text">最新バージョン: 1.4.0</p>
-      <p class="materialy-card__text">ファイルをダウンロードした時点で<a href="../license.html">ライセンス</a>に同意したことになります</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/download/cz6zxqcyavdn4mz">mcpack</a>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/download/tz8nt82e6uvyhe2">zip</a>
-    </div>
-    <div class="materialy-card" id="screenshot">
-      <p class="materialy-card__title">スクリーンショット</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/screenshot_1.jpg"></div>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/screenshot_2.jpg"></div>
-      <p class="materialy-card__text">replaceモード時の作業台(角を丸くしたい場合は画像編集ソフトで角を編集してください)</p>
-      <p class="materialy-card__text">ベースにR3DCraft 画像はアズールレーン(Azur Lane)のZ19を使用しています</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/screenshot_3.jpg"></div>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/screenshot_4.jpg"></div>
-      <p class="materialy-card__text">overlayモード時の作業台(画像は適切なアスペクト比に切り抜く必要があります)</p>
-      <p class="materialy-card__text">画像はアズールレーン(Azur Lane)のZ19を使用しています</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/screenshot_5.jpg"></div>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/screenshot_6.jpg"></div>
-      <p class="materialy-card__text">backgroundモード時の作業台(画像は使用している端末の画面アスペクト比に合わせる必要があります)</p>
-      <p class="materialy-card__text">画像はアズールレーン(Azur Lane)のZ19を使用しています(GUIで隠れてしまうため少し右にずらしています)</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/screenshot_7.jpg"></div>
-      <p class="materialy-card__text">"?"ボタンを非表示にした時のインベントリ</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/screenshot_8.jpg"></div>
-      <p class="materialy-card__text">_global_variables.jsonの中身 (ui/_global_variables.json)</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/screenshot_9.jpg"></div>
-      <p class="materialy-card__text">リソースパックのサブパックの設定ボタン</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/screenshot_10.jpg"></div>
-      <p class="materialy-card__text">サブパックの全設定</p>
-    </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">使い方</p>
-      <p class="materialy-card__title">Android</p>
-      <p class="materialy-card__subtitle">インストール</p>
-      <p class="materialy-card__text">まずダウンロードのmcpackを押し、真ん中に出てきた緑色のダウンロードボタンを押して、ファイルをダウンロードしてください</p>
-      <p class="materialy-card__text">ダウンロードが終わったら、ファイルマネージャーでダウンロードしたファイルを押し、Minecraftで開いてください</p>
-      <p class="materialy-card__text">Minecraftで開きインポート成功と出たら、設定→グローバルリソース 利用可能なリソースパックの中にあるBackImageGUIを押しプラスを押して、使用中のパックに移動したらMinecraftを再起動してください</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/backimage_gui/howto_1.jpg"></div>
-      <p class="materialy-card__text">スタート画面がこのような画面になっていればインストール成功です</p>
-      <p class="materialy-card__subtitle">画像準備</p>
-      <p class="materialy-card__text">Coming soon…</p>
-    </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">更新履歴</p>
-      <p class="materialy-card__subtitle">1.4.0</p>
-      <p class="materialy-card__text">ベースのjsonを1.2.13.60に更新</p>
-      <p class="materialy-card__text">選択したアイテムの名前を表示するように</p>
-      <p class="materialy-card__text">3つ(デフォルト・インベントリの"?"非表示にする・無効化)のサブパックを追加</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/folder/lc9ufhh57j536/1.4.0">1.4.0</a>
-      <p class="materialy-card__subtitle">1.3.1</p>
-      <p class="materialy-card__text">ベースのjsonを1.2.13.54に更新</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/folder/t3exhuhyspaaj/1.3.1">1.3.1</a>
-      <p class="materialy-card__subtitle">1.3.0</p>
-      <p class="materialy-card__text">ベースのjsonを1.2.10.2に更新</p>
-      <p class="materialy-card__text">_global_variables.jsonを編集し画像置き換え時の挙動を変更できるように</p>
-      <p class="materialy-card__text">replaceモードを追加</p>
-      <p class="materialy-card__text">overlayモードを追加</p>
-      <p class="materialy-card__text">backgroundモードを追加</p>
-      <p class="materialy-card__text">disableモードを追加</p>
-      <p class="materialy-card__text">replaceモード時GUIの白い背景が透明になるように</p>
-      <p class="materialy-card__text">Chestに対応</p>
-      <p class="materialy-card__text">startスクリーンのUIを変更</p>
-      <p class="materialy-card__text">resolution.txtにアスペクト比を追加</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/folder/yaiblxeda7lbc/1.3.0">1.3.0</a>
-      <p class="materialy-card__subtitle">1.2.2</p>
-      <p class="materialy-card__text">クラフトのレシピ選択時所持していないアイテムのスロットが赤くならない不具合の修正</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/folder/76mx31f3r55rw/1.2.2">1.2.2</a>
-      <p class="materialy-card__subtitle">1.2.1</p>
-      <p class="materialy-card__text">ベースのjsonを1.2.5.52に更新</p>
-      <p class="materialy-card__text">インベントリを1.2.5スタイルに更新</p>
-      <p class="materialy-card__text">金床のテキスト入力欄が半透明にならないようにした</p>
-      <p class="materialy-card__text">ui_common.jsonを削除</p>
-      <p class="materialy-card__text">背景画像を作らないGUIのjsonを削除すると通常のGUIが表示されるようにした</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/folder/2qj50bri9eiva/1.2.1">1.2.1</a>
-      <p class="materialy-card__subtitle">1.1.0</p>
-      <p class="materialy-card__text">1.2.1.1でワールド編集・作成画面でゲームモードが変更できない不具合の修正</p>
-      <p class="materialy-card__text">ラージチェストの背景画像化に対応</p>
-      <p class="materialy-card__text">trade.pngが入っていなかったのを修正</p>
-      <p class="materialy-card__text">resolution.txtを追加</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/folder/w013l1wogl3q6/1.1.0">1.1.0</a>
-      <p class="materialy-card__subtitle">1.0.0</p>
-      <p class="materialy-card__text">初リリース</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/folder/dwzq19hav3pk3/1.0.0">1.0.0</a>
+  <header class="materialy-app-bar-top"></header>
+  <nav class="materialy-navigation-drawer"></nav>
+  <label class="materialy-navigation-drawer__modal--scrim" for="materialy-app-bar-top--checkbox"></label>
+
+  <div class="materialy-content materialy-layout--center">
+    <div
+      class="materialy-layout--linearlayout__vertical__full materialy-layout--content-center materialy-layout--padding-top-bottom-16">
+      <div class="materialy-card__fit__no-radius">
+        <img class="materialy-card--media__top" src="../../image/distributions/backimage_gui/cover_image.jpg">
+        <p class="materialy-card--title">BackImageGUI</p>
+        <p class="materialy-card--text">GUIの背景を画像に変更できるようになるリソースパックです</p>
+        <p class="materialy-card--text">replaceモードやoverlayモードなどの画像置き換え時の挙動を変更することができます</p>
+      </div>
+      <div class="materialy-layout--space"></div>
+      <div class="materialy-card__fit__no-radius">
+        <p class="materialy-card--title">機能</p>
+        <p class="materialy-card--text">1.GUIの画像を画像に変更できるようになります</p>
+        <p class="materialy-card--text">2._global_variables.jsonを編集することで画像置き換え時の挙動を変更できます</p>
+        <p class="materialy-card--subtitle">各種モード</p>
+        <p class="materialy-card--text">replaceモード: GUIの背景を画像に置き換えます</p>
+        <p class="materialy-card--text">overlayモード: 半透明(alpha:0.6)の画像をGUIの上に被せます(インベントリの画像を合成させる必要がありません)</p>
+        <p class="materialy-card--text">backgroundモード: GUIの後ろに画像を置きます</p>
+        <p class="materialy-card--text">disableモード: 画像を非表示にします</p>
+        <p class="materialy-card--text">3.インベントリの"?"ボタンを非表示にする</p>
+      </div>
+      <div class="materialy-layout--space"></div>
+      <div class="materialy-card__fit__no-radius">
+        <p class="materialy-card--title">動作環境</p>
+        <p class="materialy-card--text">Minecraft : 1.2.13.60(で確認)</p>
+        <p class="materialy-card--text">他のバージョンでも使用できる場合や使用できない場合があります</p>
+      </div>
+      <div class="materialy-layout--space"></div>
+      <div class="materialy-card__fit__no-radius">
+        <p class="materialy-card--title">ダウンロード</p>
+        <p class="materialy-card--text">最新バージョン: 1.4.0</p>
+        <p class="materialy-card--text">ファイルをダウンロードした時点で<a href="../license.html">ライセンス</a>に同意したことになります</p>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/download/cz6zxqcyavdn4mz">mcpack</a>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/download/tz8nt82e6uvyhe2">zip</a>
+      </div>
+      <div class="materialy-card__fit__no-radius" id="screenshot">
+        <p class="materialy-card--title">スクリーンショット</p>
+        <img class="materialy-card--media" src="../../image/distributions/backimage_gui/screenshot_1.jpg">
+        <img class="materialy-card--media" src="../../image/distributions/backimage_gui/screenshot_2.jpg">
+        <p class="materialy-card--text">replaceモード時の作業台(角を丸くしたい場合は画像編集ソフトで角を編集してください)</p>
+        <p class="materialy-card--text">ベースにR3DCraft 画像はアズールレーン(Azur Lane)のZ19を使用しています</p>
+        <img class="materialy-card--media" src="../../image/distributions/backimage_gui/screenshot_3.jpg">
+        <img class="materialy-card--media" src="../../image/distributions/backimage_gui/screenshot_4.jpg">
+        <p class="materialy-card--text">overlayモード時の作業台(画像は適切なアスペクト比に切り抜く必要があります)</p>
+        <p class="materialy-card--text">画像はアズールレーン(Azur Lane)のZ19を使用しています</p>
+        <img class="materialy-card--media" src="../../image/distributions/backimage_gui/screenshot_5.jpg">
+        <img class="materialy-card--media" src="../../image/distributions/backimage_gui/screenshot_6.jpg">
+        <p class="materialy-card--text">backgroundモード時の作業台(画像は使用している端末の画面アスペクト比に合わせる必要があります)</p>
+        <p class="materialy-card--text">画像はアズールレーン(Azur Lane)のZ19を使用しています(GUIで隠れてしまうため少し右にずらしています)</p>
+        <img class="materialy-card--media" src="../../image/distributions/backimage_gui/screenshot_7.jpg">
+        <p class="materialy-card--text">"?"ボタンを非表示にした時のインベントリ</p>
+        <img class="materialy-card--media" src="../../image/distributions/backimage_gui/screenshot_8.jpg">
+        <p class="materialy-card--text">_global_variables.jsonの中身 (ui/_global_variables.json)</p>
+        <img class="materialy-card--media" src="../../image/distributions/backimage_gui/screenshot_9.jpg">
+        <p class="materialy-card--text">リソースパックのサブパックの設定ボタン</p>
+        <img class="materialy-card--media" src="../../image/distributions/backimage_gui/screenshot_10.jpg">
+        <p class="materialy-card--text">サブパックの全設定</p>
+      </div>
+      <div class="materialy-layout--space"></div>
+      <div class="materialy-card__fit__no-radius">
+        <p class="materialy-card--title">更新履歴</p>
+        <p class="materialy-card--subtitle">1.4.0</p>
+        <p class="materialy-card--text">ベースのjsonを1.2.13.60に更新</p>
+        <p class="materialy-card--text">選択したアイテムの名前を表示するように</p>
+        <p class="materialy-card--text">3つ(デフォルト・インベントリの"?"非表示にする・無効化)のサブパックを追加</p>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/folder/lc9ufhh57j536/1.4.0">1.4.0</a>
+        <p class="materialy-card--subtitle">1.3.1</p>
+        <p class="materialy-card--text">ベースのjsonを1.2.13.54に更新</p>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/folder/t3exhuhyspaaj/1.3.1">1.3.1</a>
+        <p class="materialy-card--subtitle">1.3.0</p>
+        <p class="materialy-card--text">ベースのjsonを1.2.10.2に更新</p>
+        <p class="materialy-card--text">_global_variables.jsonを編集し画像置き換え時の挙動を変更できるように</p>
+        <p class="materialy-card--text">replaceモードを追加</p>
+        <p class="materialy-card--text">overlayモードを追加</p>
+        <p class="materialy-card--text">backgroundモードを追加</p>
+        <p class="materialy-card--text">disableモードを追加</p>
+        <p class="materialy-card--text">replaceモード時GUIの白い背景が透明になるように</p>
+        <p class="materialy-card--text">Chestに対応</p>
+        <p class="materialy-card--text">startスクリーンのUIを変更</p>
+        <p class="materialy-card--text">resolution.txtにアスペクト比を追加</p>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/folder/yaiblxeda7lbc/1.3.0">1.3.0</a>
+        <p class="materialy-card--subtitle">1.2.2</p>
+        <p class="materialy-card--text">クラフトのレシピ選択時所持していないアイテムのスロットが赤くならない不具合の修正</p>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/folder/76mx31f3r55rw/1.2.2">1.2.2</a>
+        <p class="materialy-card--subtitle">1.2.1</p>
+        <p class="materialy-card--text">ベースのjsonを1.2.5.52に更新</p>
+        <p class="materialy-card--text">インベントリを1.2.5スタイルに更新</p>
+        <p class="materialy-card--text">金床のテキスト入力欄が半透明にならないようにした</p>
+        <p class="materialy-card--text">ui_common.jsonを削除</p>
+        <p class="materialy-card--text">背景画像を作らないGUIのjsonを削除すると通常のGUIが表示されるようにした</p>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/folder/2qj50bri9eiva/1.2.1">1.2.1</a>
+        <p class="materialy-card--subtitle">1.1.0</p>
+        <p class="materialy-card--text">1.2.1.1でワールド編集・作成画面でゲームモードが変更できない不具合の修正</p>
+        <p class="materialy-card--text">ラージチェストの背景画像化に対応</p>
+        <p class="materialy-card--text">trade.pngが入っていなかったのを修正</p>
+        <p class="materialy-card--text">resolution.txtを追加</p>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/folder/w013l1wogl3q6/1.1.0">1.1.0</a>
+        <p class="materialy-card--subtitle">1.0.0</p>
+        <p class="materialy-card--text">初リリース</p>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/folder/dwzq19hav3pk3/1.0.0">1.0.0</a>
+      </div>
     </div>
   </div>
   <script src="../../js/main.js"></script>
 </body>
+
 </html>

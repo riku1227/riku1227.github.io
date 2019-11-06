@@ -1,76 +1,95 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="theme-color" content="#673AB7">
-  <link rel="stylesheet" href="../../css/style.min.css">
-  <title>HiddenOptions - riku1227 Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/materialy.min.css">
+  <title>HiddenOptions - RiFun</title>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@_riku1227_" />
-  <meta property="og:site_name" content="riku1227 Website" />
-  <meta property="og:title" content="HiddenOptions - riku1227 Website" />
+  <meta property="og:site_name" content="RiFun" />
+  <meta property="og:title" content="HiddenOptions - RiFun" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://riku1227.github.io/html/distributions/hidden_options.html" />
   <meta property="og:image" content="https://riku1227.github.io/image/distributions/hidden_options/cover_image.jpg" />
   <meta property="og:description" content="非表示になっている設定を表示させるリソースパックです" />
 </head>
+
 <body ontouchstart="">
-  <header class="materialy-toolbar">
-  </header>
-  <div class="materialy-mainContent">
-    <div class="materialy-card">
-      <div class="materialy-card__image--title"> <img src="../../image/distributions/hidden_options/cover_image.jpg"> </div>
-      <p class="materialy-card__title">HiddenOptions</p>
-      <p class="materialy-card__text">非表示になっている設定を表示させるリソースパックです</p>
-    </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">機能</p>
-      <p class="materialy-card__text">1.非表示になっている設定を表示させます</p>
-      <p class="materialy-card__text">2.非表示になっているワールド設定を表示させます</p>
-    </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">動作環境</p>
-      <p class="materialy-card__text">Minecraft : 1.2.13.54(で確認)</p>
-      <p class="materialy-card__text">他のバージョンでも使用できる場合や使用できない場合があります</p>
-    </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">ダウンロード</p>
-      <p class="materialy-card__text">最新バージョン: 1.2.0</p>
-      <p class="materialy-card__text">ファイルをダウンロードした時点で<a href="../license.html">ライセンス</a>に同意したことになります</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/file/v9l78xh9bswva0k/HiddenOptions_v1.2.0.mcpack">mcpack</a>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/file/wabbuyaf7zzv5o0/HiddenOptions_v1.2.0.zip">zip</a>
-    </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">スクリーンショット</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/hidden_options/screenshot_1.jpg"></div>
-      <p class="materialy-card__text">タッチ設定</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/hidden_options/screenshot_2.jpg"></div>
-      <p class="materialy-card__text">設定に表示されるセクション</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/hidden_options/screenshot_3.jpg"></div>
-      <p class="materialy-card__text">Debug設定の一部(全て機能しません</p>
-      <div class="materialy-card__image"><img src="../../image/distributions/hidden_options/screenshot_4.jpg"></div>
-      <p class="materialy-card__text">ビデオ設定の一部</p>
-    </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">更新履歴</p>
-      <p class="materialy-card__subtitle">1.2.0</p>
-      <p class="materialy-card__text">1.2.13.54に対応</p>
-      <p class="materialy-card__text">DebugSection・Swicth向けコントロール設定・VRSectionを表示させるように</p>
-      <p class="materialy-card__text">プロフィールセクションからデバッグ設定を削除</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/folder/l170loetdvs4l/1.2.0">1.2.0</a>
-      <p class="materialy-card__subtitle">1.1.0</p>
-      <p class="materialy-card__text">1.2.10.2に対応</p>
-      <p class="materialy-card__text">DebugSectionの設定をプロフィール欄に追加</p>
-      <a class="materialy-button--flat--accent" href="http://www.mediafire.com/folder/ysasuqr57fxns/1.1.0">1.1.0</a>
-      <p class="materialy-card__subtitle">1.0.1</p>
-      <p class="materialy-card__text">1.2.10.1(Beta)に対応</p>
-      <a class="materialy-button--flat--accent" href="https://www.mediafire.com/folder/emirl5xjz3rzl/1.0.1">1.0.1</a>
-      <p class="materialy-card__subtitle">1.0.0</p>
-      <p class="materialy-card__text">初リリース</p>
-      <a class="materialy-button--flat--accent" href="http://www.mediafire.com/folder/6ha38pmzf8rfr/1.0.0">1.0.0</a>
+  <header class="materialy-app-bar-top"></header>
+  <nav class="materialy-navigation-drawer"></nav>
+  <label class="materialy-navigation-drawer__modal--scrim" for="materialy-app-bar-top--checkbox"></label>
+
+
+  <div class="materialy-content materialy-layout--center">
+    <div
+      class="materialy-layout--linearlayout__vertical__full materialy-layout--content-center materialy-layout--padding-top-bottom-16">
+      <div class="materialy-card__fit__no-radius">
+        <img class="materialy-card--media__top" src="../../image/distributions/hidden_options/cover_image.jpg">
+        <p class="materialy-card--title">HiddenOptions</p>
+        <p class="materialy-card--text">非表示になっている設定を表示させるリソースパックです</p>
+      </div>
+      <div class="materialy-layout--space"></div>
+      <div class="materialy-card__fit__no-radius">
+        <p class="materialy-card--title">機能</p>
+        <p class="materialy-card--text">1.非表示になっている設定を表示させます</p>
+        <p class="materialy-card--text">2.非表示になっているワールド設定を表示させます</p>
+      </div>
+      <div class="materialy-layout--space"></div>
+      <div class="materialy-card__fit__no-radius">
+        <p class="materialy-card--title">動作環境</p>
+        <p class="materialy-card--text">Minecraft : 1.2.13.54(で確認)</p>
+        <p class="materialy-card--text">他のバージョンでも使用できる場合や使用できない場合があります</p>
+      </div>
+      <div class="materialy-layout--space"></div>
+      <div class="materialy-card__fit__no-radius">
+        <p class="materialy-card--title">ダウンロード</p>
+        <p class="materialy-card--text">最新バージョン: 1.2.0</p>
+        <p class="materialy-card--text">ファイルをダウンロードした時点で<a href="../license.html">ライセンス</a>に同意したことになります</p>
+        <a class="materialy-button--text__accent"
+          href="https://www.mediafire.com/file/v9l78xh9bswva0k/HiddenOptions_v1.2.0.mcpack">mcpack</a>
+        <a class="materialy-button--text__accent"
+          href="https://www.mediafire.com/file/wabbuyaf7zzv5o0/HiddenOptions_v1.2.0.zip">zip</a>
+      </div>
+      <div class="materialy-layout--space"></div>
+      <div class="materialy-card__fit__no-radius">
+        <p class="materialy-card--title">スクリーンショット</p>
+        <img class="materialy-card--media" src="../../image/distributions/hidden_options/screenshot_1.jpg">
+        <p class="materialy-card--text">タッチ設定</p>
+        <img class="materialy-card--media" src="../../image/distributions/hidden_options/screenshot_2.jpg">
+        <p class="materialy-card--text">設定に表示されるセクション</p>
+        <img class="materialy-card--media" src="../../image/distributions/hidden_options/screenshot_3.jpg">
+        <p class="materialy-card--text">Debug設定の一部(全て機能しません</p>
+        <img class="materialy-card--media" src="../../image/distributions/hidden_options/screenshot_4.jpg">
+        <p class="materialy-card--text">ビデオ設定の一部</p>
+      </div>
+      <div class="materialy-layout--space"></div>
+      <div class="materialy-card__fit__no-radius">
+        <p class="materialy-card--title">更新履歴</p>
+        <p class="materialy-card--subtitle">1.2.0</p>
+        <p class="materialy-card--text">1.2.13.54に対応</p>
+        <p class="materialy-card--text">DebugSection・Swicth向けコントロール設定・VRSectionを表示させるように</p>
+        <p class="materialy-card--text">プロフィールセクションからデバッグ設定を削除</p>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/folder/l170loetdvs4l/1.2.0">1.2.0</a>
+        <p class="materialy-card--subtitle">1.1.0</p>
+        <p class="materialy-card--text">1.2.10.2に対応</p>
+        <p class="materialy-card--text">DebugSectionの設定をプロフィール欄に追加</p>
+        <a class="materialy-button--text__accent" href="http://www.mediafire.com/folder/ysasuqr57fxns/1.1.0">1.1.0</a>
+        <p class="materialy-card--subtitle">1.0.1</p>
+        <p class="materialy-card--text">1.2.10.1(Beta)に対応</p>
+        <a class="materialy-button--text__accent" href="https://www.mediafire.com/folder/emirl5xjz3rzl/1.0.1">1.0.1</a>
+        <p class="materialy-card--subtitle">1.0.0</p>
+        <p class="materialy-card--text">初リリース</p>
+        <a class="materialy-button--text__accent" href="http://www.mediafire.com/folder/6ha38pmzf8rfr/1.0.0">1.0.0</a>
+      </div>
+
     </div>
   </div>
   <script src="../../js/main.js"></script>
 </body>
+
 </html>

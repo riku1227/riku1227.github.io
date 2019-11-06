@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <meta name="theme-color" content="#673AB7">
-  <link rel="stylesheet" href="css/style.css">
-  <title>riku1227 Website</title>
+  <meta name="theme-color" content="#9c27b0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialy.min.css">
+  <title>RiFun</title>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@_riku1227_" />
-  <meta property="og:site_name" content="riku1227 Website" />
-  <meta property="og:title" content="riku1227 Website" />
+  <meta property="og:site_name" content="RiFun" />
+  <meta property="og:title" content="RiFun" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="https://riku1227.github.io/index.html" />
   <meta property="og:image" content="https://riku1227.github.io/image/cover_image.jpg" />
-  <meta property="og:description" content="Website" />
+  <meta property="og:description" content="作ったものとかを配布したり公開したりするサイト" />
 </head>
+
 <body ontouchstart="">
-  <header class="materialy-toolbar">
-  </header>
-  <div class="materialy-mainContent">
-    <div class="materialy-card">
-      <p class="materialy-card__title">riku1227.github.io</p>
-      <p class="materialy-card__text">Html・CSS・JavaScriptを勉強するために作ったサイト</p>
-      <p class="materialy-card__text">もちろん愛情を込めた手打ち</p>
-      <p class="materialy-card__text">マテリアルデザインを意識して作ってるけどガイドラインには従ってない()</p>
+  <header class="materialy-app-bar-top"></header>
+  <nav class="materialy-navigation-drawer"></nav>
+  <label class="materialy-navigation-drawer__modal--scrim" for="materialy-app-bar-top--checkbox"></label>
+
+  <main class="materialy-content materialy-layout--center">
+    <div
+      class="materialy-layout--linearlayout__vertical__full materialy-layout--content-center materialy-layout--padding-top-bottom-16">
+      <div class="materialy-card__fit__no-radius">
+        <p class="materialy-card--title">RiFun</p>
+        <p class="materialy-card--text">作ったものとかを配布したり公開したりするサイト</p>
+        <p class="materialy-card--text">ダークモードをサポートしてるので対応してるブラウザのテーマ設定によってライトテーマとダークテーマが切り替わります</p>
+        <div class="materialy-layout--space"></div>
+        <p class="materialy-card--subtitle">アカウント</p>
+        <div class="materialy-layout--linearlayout__horizontal">
+          <a class="materialy-button--text__accent" href="https://twitter.com/_riku1227_" target="_blank">Twitter</a>
+          <a class="materialy-button--text__accent" href="https://github.com/riku1227" target="_blank">Github</a>
+        </div>
+      </div>
     </div>
-    <div class="materialy-card">
-      <p class="materialy-card__title">アカウント</p>
-      <a class="materialy-button--flat--accent" href="https://plus.google.com/103470090583882439463">Google+</a>
-      <p class="materialy-card__text">ぐーぐるぷらす 何か配布したときに共有したり進捗なりなんなりを投稿するところ</p>
-      <a class="materialy-button--flat--accent"><s>Twitter</s></a>
-      <p class="materialy-card__text"><s>ついったー 特になし</s></p>
-      <a class="materialy-button--flat--accent"><s>Youtube</s></a>
-      <p class="materialy-card__text"><s>ゆーちゅーぶ 特になし</s></p>
-      <a class="materialy-button--flat--accent" href="https://github.com/riku1227">Github</a>
-      <p class="materialy-card__text">クソみたいなプロジェクトのクソみたいなコードしかないよ</p>
-    </div>
-  </div>
+  </main>
   <script src="js/main.js"></script>
 </body>
+
 </html>

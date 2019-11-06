@@ -1,15 +1,4 @@
-@media screen and (min-width: 768px) {
-  .center {
-    text-align: center;
-    padding-top: 64px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .center {
-    text-align: center;
-    padding-top: 54px;
-  }
-}
+
 
 .centerButton {
   text-align: center;
