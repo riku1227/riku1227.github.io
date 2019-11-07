@@ -16,6 +16,9 @@
     });
   }
 
+  let isLoadedHeader = false;
+  let isLoadedNavigationDrawer = false;
+
   const rippleEffect = (event) => {
     const target = event.target;
     const rippleSpan = document.createElement("span");
@@ -80,45 +83,47 @@
   }
 
   const setUpNavigationDrawer = () => {
-    const topAppBar = getFirstElementByClass("materialy-app-bar-top");
-    const topAppBarDrawerButton = getFirstElementByClass("materialy-app-bar-top--checkbox");
-    const navigationDrawer = getFirstElementByClass("materialy-navigation-drawer");
-    const navigationDrawerScrim = getFirstElementByClass("materialy-navigation-drawer__modal--scrim");
-    const mainContent = getFirstElementByClass("materialy-content");
+    if (isLoadedHeader && isLoadedNavigationDrawer) {
+      const topAppBar = getFirstElementByClass("materialy-app-bar-top");
+      const topAppBarDrawerButton = getFirstElementByClass("materialy-app-bar-top--checkbox");
+      const navigationDrawer = getFirstElementByClass("materialy-navigation-drawer");
+      const navigationDrawerScrim = getFirstElementByClass("materialy-navigation-drawer__modal--scrim");
+      const mainContent = getFirstElementByClass("materialy-content");
 
-    if (window.innerWidth <= 896) {
-      navigationDrawer.classList.add("materialy-navigation-drawer__modal");
-    } else {
-      navigationDrawer.classList.remove("materialy-navigation-drawer__modal");
-    }
-
-    topAppBarDrawerButton.addEventListener("change", () => {
-      const isModalNavigation = navigationDrawer.classList.contains("materialy-navigation-drawer__modal");
-      const isFullHeightNavigation = navigationDrawer.classList.contains("materialy-navigation-drawer__full-height");
-
-      if (topAppBarDrawerButton.checked) {
-        navigationDrawer.classList.add("materialy-navigation-drawer__open");
-        if (isModalNavigation) {
-          navigationDrawerScrim.classList.add("materialy-navigation-drawer__modal--scrim__open");
-        } else {
-          mainContent.classList.add("materialy-content__open-drawer");
-          if (isFullHeightNavigation) {
-            topAppBar.classList.add("materialy-app-bar-top__full-height-open");
-          }
-        }
+      if (window.innerWidth <= 896) {
+        navigationDrawer.classList.add("materialy-navigation-drawer__modal");
       } else {
-        navigationDrawer.classList.remove("materialy-navigation-drawer__open");
-        if (isModalNavigation) {
-          navigationDrawerScrim.classList.remove("materialy-navigation-drawer__modal--scrim__open");
+        navigationDrawer.classList.remove("materialy-navigation-drawer__modal");
+      }
+
+      topAppBarDrawerButton.addEventListener("change", () => {
+        const isModalNavigation = navigationDrawer.classList.contains("materialy-navigation-drawer__modal");
+        const isFullHeightNavigation = navigationDrawer.classList.contains("materialy-navigation-drawer__full-height");
+
+        if (topAppBarDrawerButton.checked) {
+          navigationDrawer.classList.add("materialy-navigation-drawer__open");
+          if (isModalNavigation) {
+            navigationDrawerScrim.classList.add("materialy-navigation-drawer__modal--scrim__open");
+          } else {
+            mainContent.classList.add("materialy-content__open-drawer");
+            if (isFullHeightNavigation) {
+              topAppBar.classList.add("materialy-app-bar-top__full-height-open");
+            }
+          }
         } else {
-          mainContent.classList.remove("materialy-content__open-drawer");
-          if (isFullHeightNavigation) {
-            topAppBar.classList.remove("materialy-app-bar-top__full-height-open");
+          navigationDrawer.classList.remove("materialy-navigation-drawer__open");
+          if (isModalNavigation) {
+            navigationDrawerScrim.classList.remove("materialy-navigation-drawer__modal--scrim__open");
+          } else {
+            mainContent.classList.remove("materialy-content__open-drawer");
+            if (isFullHeightNavigation) {
+              topAppBar.classList.remove("materialy-app-bar-top__full-height-open");
+            }
           }
         }
-      }
-    });
-    setUpRippleEffect();
+      });
+      setUpRippleEffect();
+    }
   }
 
   const getFirstElementByClass = (cssClass) => {
@@ -130,16 +135,16 @@
 
     loadFile(`${baseUrl}/html/core/header.html`).then((html) => {
       document.getElementsByClassName("materialy-app-bar-top")[0].innerHTML = html;
+      isLoadedHeader = true;
+      setUpNavigationDrawer();
     }, (errorText) => {
       console.log(`Error: ${errorText}`);
     });
 
     loadFile(`${baseUrl}/html/core/navigation-drawer.html`).then((html) => {
-      const observer = new MutationObserver(() => {
-        setUpNavigationDrawer();
-      });
-      observer.observe(getFirstElementByClass("materialy-navigation-drawer"), { childList: true });
       getFirstElementByClass("materialy-navigation-drawer").innerHTML = html.replace(/\$baseUrl/g, baseUrl);
+      isLoadedNavigationDrawer = true;
+      setUpNavigationDrawer();
     }, (errorText) => {
       console.log(`Error: ${errorText}`);
     });
