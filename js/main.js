@@ -69,8 +69,11 @@
     });
 
     loadFile(`${baseUrl}/html/core/navigation-drawer.html`).then((html) => {
+      const observer = new MutationObserver(() => {
+        setUpNavigationDrawer();
+      });
+      observer.observe(getFirstElementByClass("materialy-navigation-drawer"), {childList: true});
       getFirstElementByClass("materialy-navigation-drawer").innerHTML = html.replace(/\$baseUrl/g, baseUrl);
-      setUpNavigationDrawer();
     }, (errorText) => {
       console.log(`Error: ${errorText}`);
     });
