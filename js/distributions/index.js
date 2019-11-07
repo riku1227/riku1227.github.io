@@ -59,9 +59,11 @@ const generateCard = function(json) {
            `<p class="materialy-card--title materialy-layout--no-margin cardList__title">${name}</p>`+
            `<p class="materialy-card--text">最終更新日: ${dataStr}</p>`+
            `<p class="materialy-card--text">${description}</p>`+
-           '<div class="centerButton">'+
-           `<a class="materialy-button--text__accent cardList__button" href="${linkDL}">ダウンロード</a>`+
-           `<a class="materialy-button--text__accent cardList__button" href="${linkDetails}">詳細</a>`+
+           '<div class="materialy-layout--space"></div>'+
+           '<div class="materialy-dividers"></div>'+
+           '<div class="materialy-layout--linearlayout__horizontal">'+
+           `<a class="materialy-button--text__accent" href="${linkDL}">ダウンロード</a>`+
+           `<a class="materialy-button--text__accent" href="${linkDetails}">詳細</a>`+
            '</div>'+
            '</div>';
     result += html;
