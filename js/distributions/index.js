@@ -56,7 +56,7 @@ const generateCard = function(json) {
     const linkDetails = jsonObject.card_list[i].link_details;
     const html = '<div class="materialy-card cardList">'+
            `<img class="materialy-card--media__top" src="../../image/distributions/${thumbnail}/cover_image.jpg">`+
-           `<p class="materialy-card--title materialy-layout--no-margin">${name}</p>`+
+           `<p class="materialy-card--title materialy-layout--no-margin cardList__title">${name}</p>`+
            `<p class="materialy-card--text">最終更新日: ${dataStr}</p>`+
            `<p class="materialy-card--text">${description}</p>`+
            '<div class="centerButton">'+
@@ -74,9 +74,9 @@ let urlName = "";
 const generateContent = function(json) {
   try {
     let jsonObject = JSON.parse(json);
-    document.title = jsonObject.information.name + " - riku1227 Website";
+    document.title = jsonObject.information.name + " - RiFun";
     let headArray = document.head.children;
-    headArray[10].content = jsonObject.information.name + " - riku1227 Website";
+    headArray[10].content = jsonObject.information.name + " - RiFun";
     headArray[11].content = location.href;
     headArray[12].content = "https://riku1227.github.io/image/distributions/" + urlName + "/cover_image.jpg";
     headArray[13].content = jsonObject.information.description;
