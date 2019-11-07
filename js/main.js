@@ -16,6 +16,69 @@
     });
   }
 
+  const rippleEffect = (event) => {
+    const target = event.target;
+    const rippleSpan = document.createElement("span");
+    const rippleSpanSize = target.offsetWidth;
+    const targetLocation = target.getBoundingClientRect();
+
+    const x = event.pageX - targetLocation.left - window.pageXOffset - (rippleSpanSize / 2);
+    const y = event.pageY - targetLocation.top - window.pageYOffset - (rippleSpanSize / 2);
+
+    const ripplePosition = `top: ${y}px; left: ${x}px; height: ${rippleSpanSize}px; width: ${rippleSpanSize}px;`;
+
+    target.appendChild(rippleSpan);
+    rippleSpan.setAttribute("style", ripplePosition);
+    target.classList.forEach((className) => {
+      if (className.indexOf("materialy-ripple") != -1) {
+        switch (className) {
+          case "materialy-ripple":
+            rippleSpan.setAttribute("class", "materialy-ripple--effect");
+            break;
+          case "materialy-ripple__base-accent":
+            rippleSpan.setAttribute("class", "materialy-ripple--effect__base-accent");
+            break;
+          case "materialy-ripple__accent":
+            rippleSpan.setAttribute("class", "materialy-ripple--effect__accent");
+            break;
+          case "materialy-ripple__base-primary":
+            rippleSpan.setAttribute("class", "materialy-ripple--effect__base-primary");
+            break;
+          case "materialy-ripple__primary":
+            rippleSpan.setAttribute("class", "materialy-ripple--effect__primary");
+            break;
+          default:
+            rippleSpan.setAttribute("class", "materialy-ripple--effect");
+            break;
+        }
+      }
+    });
+    const rippleId = `materialy-ripple-${Math.random()}`
+    rippleSpan.setAttribute("id", rippleId)
+
+    setTimeout(() => {
+      document.getElementById(rippleId).remove();
+    }, 1250);
+  }
+
+  const setUpRippleEffect = () => {
+    Array.from(document.querySelectorAll('.materialy-ripple')).forEach((elem) => {
+      elem.addEventListener('click', rippleEffect);
+    });
+    Array.from(document.querySelectorAll('.materialy-ripple__base-accent')).forEach((elem) => {
+      elem.addEventListener('click', rippleEffect);
+    });
+    Array.from(document.querySelectorAll('.materialy-ripple__accent')).forEach((elem) => {
+      elem.addEventListener('click', rippleEffect);
+    });
+    Array.from(document.querySelectorAll('.materialy-ripple__base-primary')).forEach((elem) => {
+      elem.addEventListener('click', rippleEffect);
+    });
+    Array.from(document.querySelectorAll('.materialy-ripple__primary')).forEach((elem) => {
+      elem.addEventListener('click', rippleEffect);
+    });
+  }
+
   const setUpNavigationDrawer = () => {
     const topAppBar = getFirstElementByClass("materialy-app-bar-top");
     const topAppBarDrawerButton = getFirstElementByClass("materialy-app-bar-top--checkbox");
@@ -55,6 +118,7 @@
         }
       }
     });
+    setUpRippleEffect();
   }
 
   const getFirstElementByClass = (cssClass) => {
@@ -62,6 +126,8 @@
   }
 
   document.addEventListener("DOMContentLoaded", (event) => {
+    setUpRippleEffect();
+
     loadFile(`${baseUrl}/html/core/header.html`).then((html) => {
       document.getElementsByClassName("materialy-app-bar-top")[0].innerHTML = html;
     }, (errorText) => {
@@ -72,7 +138,7 @@
       const observer = new MutationObserver(() => {
         setUpNavigationDrawer();
       });
-      observer.observe(getFirstElementByClass("materialy-navigation-drawer"), {childList: true});
+      observer.observe(getFirstElementByClass("materialy-navigation-drawer"), { childList: true });
       getFirstElementByClass("materialy-navigation-drawer").innerHTML = html.replace(/\$baseUrl/g, baseUrl);
     }, (errorText) => {
       console.log(`Error: ${errorText}`);

@@ -62,8 +62,8 @@ const generateCard = function(json) {
            '<div class="materialy-layout--space"></div>'+
            '<div class="materialy-dividers"></div>'+
            '<div class="materialy-layout--linearlayout__horizontal">'+
-           `<a class="materialy-button--text__accent" href="${linkDL}">ダウンロード</a>`+
-           `<a class="materialy-button--text__accent" href="${linkDetails}">詳細</a>`+
+           `<a class="materialy-button--text__accent materialy-ripple__accent" href="${linkDL}">ダウンロード</a>`+
+           `<a class="materialy-button--text__accent materialy-ripple__accent" href="${linkDetails}">詳細</a>`+
            '</div>'+
            '</div>';
     result += html;
