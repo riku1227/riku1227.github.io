@@ -80,7 +80,7 @@ const generateContent = function(json) {
     let headArray = document.head.children;
     headArray[10].content = jsonObject.information.name + " - RiFun";
     headArray[11].content = location.href;
-    headArray[12].content = "https://riku1227.github.io/image/distributions/" + urlName + "/cover_image.jpg";
+    headArray[12].content = "https://riku1227.com/image/distributions/" + urlName + "/cover_image.jpg";
     headArray[13].content = jsonObject.information.description;
 
     document.getElementsByClassName("materialy-layout--linearlayout__horizontal__full")[0].className = "materialy-mainContent";
@@ -166,14 +166,14 @@ const generateContent = function(json) {
 
   let urlParameter = location.search.substring(1);
   if(urlParameter === "") {
-    loadFile("https://riku1227.github.io/json/distributions/index.json",generateCard);
+    loadFile("https://riku1227.com/json/distributions/index.json",generateCard);
   } else {
     let parameter = urlParameter.split("&")[0].split("=");
     if(parameter[0] === "item") {
       urlName = parameter[1];
-      loadFile(`https://riku1227.github.io/json/distributions/items/${parameter[1]}.json`,generateContent);
+      loadFile(`https://riku1227.com/json/distributions/items/${parameter[1]}.json`,generateContent);
     } else {
-      loadFile("https://riku1227.github.io/json/distributions/index.json",generateCard);
+      loadFile("https://riku1227.com/json/distributions/index.json",generateCard);
     }
   }
 }());
