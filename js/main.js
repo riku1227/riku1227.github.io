@@ -1,6 +1,6 @@
 "use strict";
 (function () {
-  const baseUrl = "https://riku1227.github.io";
+  const baseUrl = "https://riku1227.com";
   const loadFile = (url) => {
     return new Promise((resolve, reject) => {
       const request = new XMLHttpRequest();
