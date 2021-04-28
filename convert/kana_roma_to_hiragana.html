@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="theme-color" content="#9c27b0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/materialy.min.css">
+    <title>RiFun</title>
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+</head>
+
+<body ontouchstart="">
+    <header class="materialy-app-bar-top"></header>
+    <nav class="materialy-navigation-drawer"></nav>
+    <label class="materialy-navigation-drawer__modal--scrim" for="materialy-app-bar-top--checkbox"></label>
+
+    <main class="materialy-content materialy-layout--center">
+        <div
+            class="materialy-layout--linearlayout__vertical__full materialy-layout--content-center materialy-layout--padding-top-bottom-16">
+
+            <div class="materialy-card__fit__no-radius">
+                <div
+                    class="materialy-layout--linearlayout__vertical__full materialy-layout--content-center materialy-layout--padding-top-bottom-16">
+                    <textarea id="kanaRoma" placeholder="変換する文字列"
+                        style="background-color: black; color: white; width: 80%; height: 10rem; resize: vertical; padding: 8px;"></textarea>
+                    <button id="convert" class="materialy-button materialy-ripple"
+                        style="margin-top: 16px; margin-bottom: 16px;">変換</button>
+                    <textarea id="result" placeholder="変換結果"
+                        style="background-color: black; color: white; width: 80%; height: 10rem; resize: vertical; padding: 8px;"></textarea>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <script src="../js/main.js"></script>
+    <script>
+        const convertButton = document.getElementById("convert");
+
+        const kanaInputHiraganaDic = [
+            //その他
+            ["s<", "、"],
+            ["s>", "。"],
+
+            //あ行(小文字)
+            ["s3", "ぁ"],
+            ["sE", "ぃ"],
+            ["s4", "ぅ"],
+            ["s5", "ぇ"],
+            ["s6", "ぉ"],
+
+            //あ行
+            ["3", "あ"],
+            ["E", "い"],
+            ["4", "う"],
+            ["5", "え"],
+            ["6", "お"],
+
+            //か行(濁点)
+            ["T`", "が"],
+            ["G`", "ぎ"],
+            ["H`", "ぐ"],
+            ["*`", "げ"],
+            ["B`", "ご"],
+
+            //か行
+            ["T", "か"],
+            ["G", "き"],
+            ["H", "く"],
+            ["*", "け"],
+            ["B", "こ"],
+
+            //さ行(濁点)
+            ["X`", "ざ"],
+            ["D`", "じ"],
+            ["R`", "ず"],
+            ["P`", "ぜ"],
+            ["C`", "ぞ"],
+
+            //さ行
+            ["X", "さ"],
+            ["D", "し"],
+            ["R", "す"],
+            ["P", "せ"],
+            ["C", "そ"],
+
+            //た行(濁点)
+            ["Q`", "だ"],
+            ["A`", "ぢ"],
+            ["Z`", "づ"],
+            ["W`", "で"],
+            ["S`", "ど"],
+
+            //た行
+            ["sZ", "っ"],
+            ["Q", "た"],
+            ["A", "ち"],
+            ["Z", "つ"],
+            ["W", "て"],
+            ["S", "と"],
+
+            //な行
+            ["U", "な"],
+            ["I", "に"],
+            ["1", "ぬ"],
+            ["<", "ね"],
+            ["K", "の"],
+
+            //ば行
+            ["F`", "ば"],
+            ["V`", "び"],
+            ["2`", "ぶ"],
+            ["~`", "べ"],
+            ["=`", "ぼ"],
+
+            //ぱ行
+            ["F{", "ぱ"],
+            ["V{", "ぴ"],
+            ["2{", "ぷ"],
+            ["~{", "ぺ"],
+            ["={", "ぽ"],
+
+            //は行
+            ["F", "は"],
+            ["V", "ひ"],
+            ["2", "ふ"],
+            ["~", "へ"],
+            ["=", "ほ"],
+
+            //ま行
+            ["J", "ま"],
+            ["N", "み"],
+            ["}", "む"],
+            ["?", "め"],
+            ["M", "も"],
+
+            //や行(小文字)
+            ["s7", "ゃ"],
+            ["s8", "ゅ"],
+            ["s9", "ょ"],
+
+            //や行
+            ["7", "や"],
+            ["8", "ゆ"],
+            ["9", "よ"],
+
+            //ら行
+            ["O", "ら"],
+            ["L", "り"],
+            [">", "る"],
+            ["+", "れ"],
+            ["_", "ろ"],
+
+            //わをん
+            ["s0", "を"],
+            ["0", "わ"],
+            ["Y", "ん"]
+        ];
+
+        const convertToHiragana = (kanaInput) => {
+            let result = kanaInput;
+            for (let i = 0; i < kanaInputHiraganaDic.length; i++) {
+                const escape = kanaInputHiraganaDic[i][0]
+                    .replace(".", "\\.").replace("^", "\\^").replace("$", "\\$")
+                    .replace("|", "\\|").replace("\\", "\\\\").replace("[", "\\[")
+                    .replace("]", "\\]").replace("-", "\\-").replace("(", "\\(")
+                    .replace(")", "\\)").replace("{", "\\{").replace("}", "\\}")
+                    .replace("*", "\\*").replace("?", "\\?").replace("+", "\\+");
+                console.log(escape);
+                const reg = new RegExp(`${escape}`, "g");
+                result = result.replace(reg, kanaInputHiraganaDic[i][1]);
+            }
+            return result;
+        }
+
+        convertButton.addEventListener("click", () => {
+            const kanaRomaInput = document.getElementById("kanaRoma");
+            const resultInput = document.getElementById("result");
+
+            resultInput.value = convertToHiragana(kanaRomaInput.value);
+        });
+    </script>
+</body>
+
+</html>
